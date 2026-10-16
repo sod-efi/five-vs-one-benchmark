@@ -1,0 +1,1 @@
+- 2026-10-16: Future experiment dispatch may learn bounded local origin/model concurrency and delay, with aggregate throughput checks and rollback; keep release commit 8974089727fc1714179f88cdd8f6cdec85ddfe1b dev/benchmark and paper byte-identical. V2 timing is a different protocol, not a published-study reproduction.
