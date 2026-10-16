@@ -1,0 +1,1746 @@
+[
+ {
+  "id": "mmlupro-7956",
+  "category": "math",
+  "question": "(i + 1)(5 – 5i)(5 + 5i) =",
+  "options": [
+   "50 – 50i",
+   "75 - 75i",
+   "50 + 50i",
+   "25 + 25i",
+   "50 - 25i",
+   "50 + 25i",
+   "100 - 100i",
+   "100 + 100i",
+   "75 + 75i",
+   "25 – 25i"
+  ],
+  "answer": "C"
+ },
+ {
+  "id": "mmlupro-164",
+  "category": "business",
+  "question": "The assessed valuation of the taxable property in the town of Smithville is $52,384,600. The taxes to be raised are $123,475 for a new local project, $931,442.75 for educational purposes, and $319,878 for health and welfare needs. Find the town's tax rate (a) to thousandths of a percent, (b) in mills per $1 of assessed value (c) in cents per $100 of assessed value, and (d) in mills per $1,000 of assessed value.",
+  "options": [
+   "2.424%, 24.24 mills per $1, 242.4 cents per $100, 24,240 mills per $1000",
+   "2.624%, 26.24 mills per $1, 262.4 cents per $100, 26,240 mills per $1000",
+   "2.124%, 21.24 mills per $1, 212.4 cents per $100, 21,240 mills per $1000",
+   "2.324%, 23.24 mills per $1, 232.4 cents per $100, 23,240 mills per $1000",
+   "1.824%, 18.24 mills per $1, 182.4 cents per $100, 18,240 mills per $1000",
+   "2.724%, 27.24 mills per $1, 272.4 cents per $100, 27,240 mills per $1000",
+   "3.124%, 31.24 mills per $1, 312.4 cents per $100, 31,240 mills per $1000",
+   "2.224%, 22.24 mills per $1, 222.4 cents per $100, 22,240 mills per $1000",
+   "2.024%, 20.24 mills per $1, 202.4 cents per $100, 20,240 mills per $1000",
+   "1.624%, 16.24 mills per $1, 162.4 cents per $100, 16,240 mills per $1000"
+  ],
+  "answer": "B"
+ },
+ {
+  "id": "mmlupro-5364",
+  "category": "other",
+  "question": "In what ways do theories of conventional and critical social constructivism differ?",
+  "options": [
+   "Critical constructivism argues that conventional constructivism is too focused on rationalist approaches and fails to account for the role of power and inequality in social constructions.",
+   "Conventional constructivism refers to the earlier works of social constructivist theorists that are characterised by a rejection of positivist methodology. Critical constructivists challenge these theories, embracing positivist methodologies in their work.",
+   "Conventional constructivists view constructivism as a bridge between rationalist and reflectivist approaches, enabling both to benefit from the insights of the other. Conversely, critical constructivists argue that this approach simply reproduces the binary distinctions that characterize positivist methodology.",
+   "Conventional constructivism views social reality as a product of individual cognitive processes, while critical constructivism views it as a product of societal and institutional structures.",
+   "Conventional constructivism argues for a positivist methodology while critical constructivism rejects this in favor of a more interpretivist approach.",
+   "Critical constructivism regards the strength of social constructivism to be its ability to bridge rationalist and reflectivity approaches. Conversely, social constructivists regard this as an unhelpful regression to positivist binary frameworks of analysis.",
+   "Social constructivism is best understood as a uniform approach to the construction of social identities and security; although distinctions exist within the field, these are not easily defined as distinctive separate approaches.",
+   "Conventional constructivism and critical constructivism are two different names for the same approach in social theory, with no significant differences between them."
+  ],
+  "answer": "C"
+ },
+ {
+  "id": "mmlupro-6189",
+  "category": "health",
+  "question": "An 18-year-old primigravid woman comes for her initial prenatal visit at 16 weeks' gestation. She is not sure about the date of her last menstrual period but says that the pregnancy probably occurred immediately after she stopped taking oral contraceptives 5 months ago. Maternal serum α-fetoprotein (MSAFP) concentration is increased to 3 multiples of the median. Which of the following is the most appropriate next step in management? ",
+  "options": [
+   "Immediate cesarean section",
+   "Prescribe oral contraceptives",
+   "Amniocentesis for measurement of α-fetoprotein concentration",
+   "Administer a pregnancy test",
+   "Hormone therapy to balance MSAFP levels",
+   "Ultrasonography",
+   "Conduct a pelvic exam",
+   "Triple screening for MSAFP, serum β-hCG, and serum estriol concentrations",
+   "Repeat measurement of MSAFP concentration",
+   "Monitor patient without taking action"
+  ],
+  "answer": "F"
+ },
+ {
+  "id": "mmlupro-6246",
+  "category": "health",
+  "question": "A 15-year-old girl is brought to the physician 3 months after she had a blood pressure of 150/95 mm Hg at a routine examination prior to participation in school sports. She is asymptomatic and has no history of serious illness. Twelve months ago, she was diagnosed with a urinary tract infection and treated with oral trimethoprim-sulfamethoxazole. She currently takes no medications. Subsequent blood pressure measurements on three separate occasions since the last visit have been: 155/94 mm Hg, 145/90 mm Hg, and 150/92 mm Hg. She is at the 50th percentile for height and 95th percentile for weight. Her blood pressure today is 150/90 mm Hg confirmed by a second measurement, pulse is 80/min, and respirations are 12/min. Examination shows no other abnormalities. Her hematocrit is 40%. Urinalysis is within normal limits. Cardiac and renal ultrasonography shows no abnormalities. Which of the following is the most appropriate next step in management?",
+  "options": [
+   "Measurement of serum potassium levels",
+   "Measurement of urine corticosteroid concentrations",
+   "Exercise and weight reduction program",
+   "Captopril therapy",
+   "Initiate diuretic therapy",
+   "Referral for psychiatric evaluation",
+   "Initiate calcium channel blocker therapy",
+   "Measurement of urine catecholamine concentrations",
+   "Measurement of plasma renin activity",
+   "Initiate beta-blocker therapy"
+  ],
+  "answer": "C"
+ },
+ {
+  "id": "mmlupro-10574",
+  "category": "computer science",
+  "question": "Consider Convolutional Neural Network D2 which takes input images of size 32x32 with 1 colour channels. The first layer of D2 uses 4 filters of size 5x5, a stride of 2, and zero-padding of width 1. The dimensions of the resulting activation map for each filter in this first layer will be k x k. What is the value of k?",
+  "options": [
+   "25",
+   "14",
+   "20",
+   "15",
+   "16",
+   "28",
+   "22",
+   "24",
+   "30",
+   "18"
+  ],
+  "answer": "D"
+ },
+ {
+  "id": "mmlupro-10554",
+  "category": "computer science",
+  "question": "Consider an object-oriented language in which all entities are objects. Two relationships arise: (1) the instance relationship, between an object and the class of which that object is a member, and (2) the subclass relationship, between a class and the superclass from which that class inherits properties. In such a language, when a message is sent to an object requesting execution of one of its methods (procedures), the method is located by following",
+  "options": [
+   "one or more instance links and then one or more subclass links",
+   "one or more subclass links",
+   "one or more subclass links and then one or more instance links",
+   "one instance link and then zero or more subclass links",
+   "one or more instance links",
+   "one subclass link only",
+   "zero or more instance links",
+   "zero or more instance links and then one or more subclass links",
+   "one subclass link and then one or more instance links",
+   "one instance link only"
+  ],
+  "answer": "D"
+ },
+ {
+  "id": "mmlupro-4474",
+  "category": "chemistry",
+  "question": "Find the pH of a 0.2 M solution of formic acid. K_a = 1.76 × 10^-4.",
+  "options": [
+   "3.01",
+   "2.23",
+   "2.77",
+   "4.56",
+   "1.76",
+   "1.92",
+   "5.17",
+   "3.8",
+   "0.2",
+   "1.0"
+  ],
+  "answer": "B"
+ },
+ {
+  "id": "mmlupro-1877",
+  "category": "law",
+  "question": "A repairman repaired damaged electrical power lines and replaced old, worn-out equipment whenever necessary for the local municipal electrical company. After a violent tornado had ripped through the city, the electrical company was busily trying to restore electrical power to its customers. The morning after the storm, the repairman was perched on a ladder trying to repair a high-voltage power line. As he was removing the cover of the transformer box, the ladder suddenly slipped on the wet ground, even though it had been properly fixed into position. The repairman struggled to maintain his balance and, luckily, the ladder came to rest against the transformer box. A pedestrian, who was walking on the street below, saw the repairman's predicament and began to climb the ladder to aid him. As the pedestrian was ascending the ladder, his foot slipped, and he fell to the ground. His fall caused the ladder to jar loose the transformer box, which in turn sent the repairman falling to the pavement. The repairman and the pedestrian both suffered serious injuries. If the pedestrian asserts a claim against the electrical company for his injuries, he will most likely",
+  "options": [
+   "prevail, because the pedestrian was acting as a good Samaritan.",
+   "prevail, because the company should have ensured the area was safe for pedestrians.",
+   "not prevail, because the company had no control over the ladder slipping due to wet ground.",
+   "prevail, because he was attempting to rescue the repairman.",
+   "prevail, because the company failed to provide immediate assistance to the repairman.",
+   "not prevail, because the electrical company is not liable for accidents caused by natural disasters.",
+   "prevail, because a public utility company is strictly liable in tort.",
+   "not prevail, because the repairman was not negligent in not affixing the ladder properly."
+  ],
+  "answer": "H"
+ },
+ {
+  "id": "mmlupro-12166",
+  "category": "engineering",
+  "question": "Air flows through a pipe, and cooling is achieved by means of forced convection. Air flowing at a speed of 100 ft/sec enters the pipe at a temperature and pressure of 68°F and 14.2 psi, respectively. The pipe is 3 ft. in length, with a 0.8 in. diameter. The wall surface temperature is 200°F. If the pressure drop over the length is 3.2 in. of water, calculate the heat transferred from the pipe to the air.",
+  "options": [
+   "1750 Btu/hr",
+   "1650 Btu/hr",
+   "1571.56 Btu/hr",
+   "1500 Btu/hr",
+   "1600 Btu/hr",
+   "1432.22 Btu/hr",
+   "1325 Btu/hr",
+   "1725 Btu/hr",
+   "1890 Btu/hr",
+   "1475.78 Btu/hr"
+  ],
+  "answer": "C"
+ },
+ {
+  "id": "mmlupro-12204",
+  "category": "engineering",
+  "question": "The flow through a sluice gate set into a dam is to be investigated by building a model of the dam and sluice at 1 : 20 scale. Calculate the head at which the model should work to give conditions corresponding to a prototype head of 20 meters. If the discharge from the model under this corresponding head is 0.5 m^3/s, estimate the discharge from the prototype dam. A relationship between a set of physical variables can be stated as a relationship between a set of independent dimensionless groups made up from suitably chosen variables. The variables involved in this problem are Q -- the flow rate, d -- a leading dimension of the sluice, h -- the head over the sluice, \\rho -- the mass density of the water, g -- the gravity field intensity and \\mu -- the viscosity of water, so that there is some function, f (Q, \\rho, g, h, d, \\mu) = 0",
+  "options": [
+   "1200 m^3/s",
+   "550 m^3/s",
+   "500 m^3/s",
+   "750 m^3/s",
+   "894 m^3/s",
+   "800 m^3/s",
+   "1000 m^3/s",
+   "425 m^3/s",
+   "650 m^3/s",
+   "950 m^3/s"
+  ],
+  "answer": "E"
+ },
+ {
+  "id": "mmlupro-12177",
+  "category": "engineering",
+  "question": "Compute the size of a steel rectangular column hinged at both ends. The length of the column is 16 in., and the compressive load is 15,000 lbs. Assume a factor of safety of 2.5, elastic limit of the material = 40,000 psi, modulus of elasticity = 30 × 10^6 psi and breadth = 3 × (thickness).",
+  "options": [
+   "2.5 in. x 0.75 in.",
+   "1.8 in. x 0.6 in.",
+   "2.25 in. x 0.8 in.",
+   "1.75 in. x 0.65 in.",
+   "3 in. x 1 in.",
+   "2 in. x 0.6 in.",
+   "2 in. x 0.7 in.",
+   "2.25 in. x 0.75 in.",
+   "2.5 in. x 0.8 in.",
+   "2.75 in. x 0.85 in."
+  ],
+  "answer": "H"
+ },
+ {
+  "id": "mmlupro-10544",
+  "category": "computer science",
+  "question": "Convert the following logical expressions to reverse Polish string notation: (a) (Z \\downarrow ((((X) \\odot Y) / (X \\odot (Z))) > ((Y) \\equiv X))) (b) (X / Y) / ((X / X) / (Y / Y))",
+  "options": [
+   "ZXY \\odot XZ \\odot / Y \\equiv X > \\downarrow, YX / XX / YY / / /",
+   "ZXY \\odot XZ \\odot / YX \\equiv > \\downarrow, XY / XX / YY / / /",
+   "ZYX \\odot XZ \\odot / Y \\equiv X > \\downarrow, XY / XX / YY / / /",
+   "ZX \\odot YXZ \\odot / Y \\equiv > X \\downarrow, XX / YY / XY / / /",
+   "ZX\nceilY \\odot XZ\nceil \\odot / Y\nceilX\\equiv> \\downarrow, XX / XY / YY / / /",
+   "ZX \\odot YZ \\odot X / Y \\equiv > X \\downarrow, XY / YY / XX / / /",
+   "Z\nceilXY \\odot XZ\nceil \\odot / Y\nceilX\\equiv> \\downarrow, XY / XX / YY / / /",
+   "ZX \\odot YXZ \\odot / \\equiv Y > X \\downarrow, XY / XX / YY / / /",
+   "ZX\nceilY \\odot XZ\nceil \\odot / Y\nceilX\\equiv> \\downarrow, XY / XX / YY / / /",
+   "ZX\nceilX \\odot YZ\nceil \\odot / Y\nceilX\\equiv> \\downarrow, XY / XX / YY / / /"
+  ],
+  "answer": "I"
+ },
+ {
+  "id": "mmlupro-1854",
+  "category": "law",
+  "question": "A wealthy retiree had amassed a fortune after selling his pharmaceutical company. The retiree and his wife lived in an exquisitely decorated penthouse apartment overlooking a park. One night, the retiree and his wife were returning home from dinner when they were accosted by a man outside their apartment building. The man brandished a gun and told the retiree and his wife to take him to their apartment. Upon entering the apartment, the man blindfolded the retiree and his wife and tied them up with duct tape to chairs in the living room. The man then stole the retiree's wallet and assorted jewelry from the bedroom. After the man exited the apartment, the retiree and his wife tried desperately to free themselves from their constraints. As the retiree was struggling, he suffered a heart attack and died. The man should be found guilty of",
+  "options": [
+   "burglary and involuntary manslaughter.",
+   "robbery and burglary.",
+   "involuntary manslaughter.",
+   "burglary.",
+   "robbery, burglary, and involuntary manslaughter.",
+   "burglary, robbery, and murder.",
+   "robbery and murder.",
+   "robbery.",
+   "aggravated assault and robbery.",
+   "murder."
+  ],
+  "answer": "F"
+ },
+ {
+  "id": "mmlupro-10996",
+  "category": "philosophy",
+  "question": " Singer argues that developing nations are harming poor nations by",
+  "options": [
+   "exploiting their natural resources without adequate compensation.",
+   "indoctrinating them with Western values.",
+   "forcing them to adopt Western educational systems.",
+   "imposing their political systems on them.",
+   "promoting consumerism and materialistic values.",
+   "causing global warming.",
+   "ignoring important aspects of their culture.",
+   "refusing to help with debt relief.",
+   "imposing trade restrictions and tariffs.",
+   "handing out too much foreign aid, which increases need."
+  ],
+  "answer": "F"
+ },
+ {
+  "id": "mmlupro-9654",
+  "category": "physics",
+  "question": "Identify $\\mathrm{X}$ in the following nuclear reactions: (a) ${ }^1 \\mathrm{H}+$ ${ }^9 \\mathrm{Be} \\rightarrow \\mathrm{X}+\\mathrm{n} ;$ (b) ${ }^{12} \\mathrm{C}+{ }^1 \\mathrm{H} \\rightarrow \\mathrm{X} ;$ (c) ${ }^{15} \\mathrm{~N}+{ }^1 \\mathrm{H} \\rightarrow{ }^4 \\mathrm{He}+\\mathrm{X}$. Appendix F will help.",
+  "options": [
+   "${ }^{14} \\mathrm{~N}$",
+   "${ }^{11} \\mathrm{~B}$",
+   "${ }^8 \\mathrm{~B}$",
+   "${ }^9 \\mathrm{~B}$",
+   "${ }^{16} \\mathrm{~O}$",
+   "${ }^{10} \\mathrm{~B}$",
+   "${ }^6 \\mathrm{~Li}$",
+   "${ }^7 \\mathrm{~Li}$"
+  ],
+  "answer": "D"
+ },
+ {
+  "id": "mmlupro-154",
+  "category": "business",
+  "question": "With the invoice amount of $190.55, and a discount rate of 2% on a partial payment of $90.00, what is the balance due and the discount?",
+  "options": [
+   "$101.55 and $1.84",
+   "$98.71 and $1.84",
+   "$98.71 and $2.00",
+   "$90.00 and $1.84",
+   "$91.84 and $1.84",
+   "$99.71 and $1.80",
+   "$100.55 and $2.00",
+   "$98.71 and $1.80",
+   "$100.55 and $1.80",
+   "$99.55 and $1.78"
+  ],
+  "answer": "B"
+ },
+ {
+  "id": "mmlupro-11434",
+  "category": "engineering",
+  "question": "How many bits are required to store one BCD digit ?",
+  "options": [
+   "7",
+   "10",
+   "2",
+   "3",
+   "5",
+   "4",
+   "9",
+   "6",
+   "1",
+   "8"
+  ],
+  "answer": "F"
+ },
+ {
+  "id": "mmlupro-1875",
+  "category": "law",
+  "question": "A state has the following hit-and-run statute in effect:\"Any driver of a motor vehicle (including but not limited to automobiles, trucks, buses, or motorcycles) involved in an accident or collision resulting in injury or death to a human being shall immediately stop his or her vehicle at the scene of such accident or collision, render necessary aid to the injured victim, and furnish the police or other person(s) at the scene with his or her name, address and driver's license. Any violation or noncompliance with said statute shall be punished by imprisonment for not less than three years nor more than seven years. \"The defendant was involved in an accident that involved injuries to the other driver. The defendant, however, knowing his license to be revoked and afraid of being arrested, fled the scene. However, the victim was able to write down the license number of the defendant's vehicle, and the defendant was rapidly apprehended and put in jail. The defendant is charged with violating the aforementioned statute. He files a motion to dismiss on the grounds that the disclosure requirement of the statute violates his privilege against self-incrimination. His motion should be",
+  "options": [
+   "granted, because the statute makes no provision for Miranda warnings concerning his right to remain silent.",
+   "denied, because in accordance with public policy considerations, the required disclosures are insufficiently testimonial.",
+   "denied, because the defendant's license was already revoked, making the disclosure requirement irrelevant.",
+   "denied, because the legislative intent in enacting the statute was designed to require disclosure of information to be used primarily in civil litigation.",
+   "denied, because the statute is in place to protect victims of accidents, not the drivers causing them.",
+   "granted, because the defendant was unaware of the statute at the time of the accident.",
+   "denied, because the defendant's flight from the scene indicates a consciousness of guilt.",
+   "granted, because the statute does not specify the consequences of having a revoked license.",
+   "granted, because the statute requires him to provide incriminating information that can be used againsthim in a criminal prosecution.",
+   "granted, because the defendant's fear of arrest prevented him from complying with the statute."
+  ],
+  "answer": "B"
+ },
+ {
+  "id": "mmlupro-2718",
+  "category": "psychology",
+  "question": "Garcia and Koelling's research regarding learned aversions established that which of the following UCS and CS pairs are the most powerful and learned most quickly?",
+  "options": [
+   "pleasure and a visual stimulus",
+   "thirst and a particular color",
+   "movement and shock",
+   "punishments and rewards",
+   "anger and a specific musical note",
+   "pain and a specific texture",
+   "performing a task and receiving a food reward",
+   "nausea and food or drink",
+   "hunger and a particular smell",
+   "fear and a certain sound"
+  ],
+  "answer": "H"
+ },
+ {
+  "id": "mmlupro-450",
+  "category": "business",
+  "question": "A monopolist can produce at constant average and marginal costs of AC = MC = 5. The firm faces a market demand curve given by Q = 53 - P. Calculate the consumer surplus obtained by consumers under perfect competition (where price = marginal cost)?",
+  "options": [
+   "1100",
+   "1280",
+   "1250",
+   "1300",
+   "950",
+   "1000",
+   "1050",
+   "1152",
+   "1200",
+   "900"
+  ],
+  "answer": "H"
+ },
+ {
+  "id": "mmlupro-968",
+  "category": "law",
+  "question": "A football player sued a football team for breach of contract. He was a star player for the team before suffering a serious hip injury. Although the player attempted to continue playing for the team, he failed a physical examination and was cut from the team roster. After failing his physical, the team discontinued making contract payments to the player as per the terms of his employment contract. In his lawsuit, the player claimed that he was physically fit to continue playing but that he was cut from the team because they wanted to stop making contract payments. At trial, the team called its physician, an orthopedist, to testify that the player's hip injury was, in fact, career-threatening and, in his opinion, sufficiently serious to warrant failing his physical. The team physician stated during his testimony that his diagnosis was based, in part, upon an examination of the player's x-rays and review of an MRI test conducted by another doctor. Neither the x-rays nor the MRI test results have been admitted into evidence. In all likelihood, the team physician's testimony should be",
+  "options": [
+   "inadmissible, because the team physician is not a radiologist capable of interpreting MRI results.",
+   "admissible, if the football player confirms that the physician's diagnosis was shared with him.",
+   "admissible, provided that the other doctor testifies as to the validity of the MRI test results.",
+   "admissible, provided that the team physician has been practicing for more than 10 years.",
+   "inadmissible, because the team physician's opinion was not based in part upon his own firsthand observation of the player's physical condition.",
+   "inadmissible, because neither the x-rays nor the MRI test results had been admitted into evidence at the time he formulated his opinion.",
+   "admissible, only if the x-rays and MRI test results are presented during the trial.",
+   "admissible, provided the team physician based his opinion on data reasonably relied upon by other orthopedic physicians in the field.",
+   "inadmissible, as the team physician has a possible bias towards the football team.",
+   "inadmissible, because the team physician should have conducted the MRI test himself."
+  ],
+  "answer": "H"
+ },
+ {
+  "id": "mmlupro-374",
+  "category": "business",
+  "question": "What is the net amount obtained from $4,500.00 successively discounted at 20%, 15% and 2(1/2)%?",
+  "options": [
+   "$2,850.00",
+   "$3,240.00",
+   "$2,775.00",
+   "$3,420.75",
+   "$900",
+   "$3,060",
+   "$2,983.50",
+   "$3,003.25",
+   "$3,150.00",
+   "$3,600"
+  ],
+  "answer": "G"
+ },
+ {
+  "id": "mmlupro-3586",
+  "category": "chemistry",
+  "question": "What volume (in cc) is occupied by a block of woodof dimensions25.0 m × 10.0 cm × 300 mm. All edges are 90° toone another.",
+  "options": [
+   "7.50 × 10^5 cc",
+   "75000 cc",
+   "3.75 × 10^5 cc",
+   "750 cc",
+   "3.00 × 10^5 cc",
+   "2500 cc",
+   "1.00 × 10^6 cc",
+   "2.50 × 10^6 cc",
+   "7.50 × 10^4 cc",
+   "1.50 × 10^5 cc"
+  ],
+  "answer": "A"
+ },
+ {
+  "id": "mmlupro-118",
+  "category": "business",
+  "question": "A business started last year with an inventory of 90,000 items which cost $60,000 and had a selling price of $80,000, At the end of the year, the inventory consisted of 70,000 items which cost $90,000 and had a selling price of $120,000. Records indicate that, during the year, 360,000 items were sold which cost $300,000, with net sales of $380,000. What are thestockturnrates at cost, selling price, and number of units?",
+  "options": [
+   "3.5, 4.0, 4.5",
+   "3.5, 3.5, 5.0",
+   "4.5, 4.2, 3.8",
+   "5.0, 4.5, 3.5",
+   "4.0, 4.0, 4.0",
+   "4.2, 3.5, 3.8",
+   "4.0, 3.8, 4.5",
+   "3.8, 4.0, 3.5",
+   "4.5, 3.8, 4.0",
+   "3.0, 4.2, 4.2"
+  ],
+  "answer": "G"
+ },
+ {
+  "id": "mmlupro-7068",
+  "category": "economics",
+  "question": "If two variables, $x_t$ and $y_t$ are said to be cointegrated, which of the following statements are true?\n\ni) $x_t$ and $y_t$ must both be stationary\n\n\nii) Only one linear combination of $x_t$ and $y_t$ will be stationary\n\n\niii) The cointegrating equation for $x_t$ and $y_t$ describes the short-run relationship\n\nbetween the two series\n\n\niv) The residuals of a regression of $y_t$ on $x_t$ must be stationary",
+  "options": [
+   "(i) and (iv) only",
+   "(iii) and (iv) only",
+   "(i) and (iii) only",
+   "(ii) and (iv) only",
+   "(i), (iii), and (iv) only",
+   "(i), (ii), and (iii) only",
+   "(ii) and (iii) only",
+   "(i) and (ii) only",
+   "(ii), (iii), and (iv) only",
+   "(i), (ii), (iii), and (iv)"
+  ],
+  "answer": "D"
+ },
+ {
+  "id": "mmlupro-7939",
+  "category": "math",
+  "question": "Let x and y be positive integers such that 3x + 7y is divisible by 11. Which of the following must also be divisible by 11?",
+  "options": [
+   "7x + 3y",
+   "x + y + 5",
+   "6x - 2y",
+   "8x + 3y",
+   "4x + 6y",
+   "5x + 6y",
+   "9x + 4y",
+   "4x - 9y",
+   "2x + 5y",
+   "x + 8y"
+  ],
+  "answer": "H"
+ },
+ {
+  "id": "mmlupro-4520",
+  "category": "chemistry",
+  "question": "Use the $D_0$ value of $\\mathrm{H}_2(4.478 \\mathrm{eV})$ and the $D_0$ value of $\\mathrm{H}_2^{+}(2.651 \\mathrm{eV})$ to calculate the first ionization energy of $\\mathrm{H}_2$ (that is, the energy needed to remove an electron from $\\mathrm{H}_2$ ).",
+  "options": [
+   "11.876 $\\mathrm{eV}$",
+   "16.500 $\\mathrm{eV}$",
+   "14.789 $\\mathrm{eV}$",
+   "17.128 $\\mathrm{eV}$",
+   "19.342 $\\mathrm{eV}$",
+   "18.973 $\\mathrm{eV}$",
+   "13.129 $\\mathrm{eV}$",
+   "14.256 $\\mathrm{eV}$",
+   "12.345 $\\mathrm{eV}$",
+   "15.425 $\\mathrm{eV}$"
+  ],
+  "answer": "J"
+ },
+ {
+  "id": "mmlupro-10961",
+  "category": "philosophy",
+  "question": " Which of the following is a value that Arthur believes is more fundamental than rights and desert?",
+  "options": [
+   "justice",
+   "fairness",
+   "respect for other persons",
+   "all of the above"
+  ],
+  "answer": "D"
+ },
+ {
+  "id": "mmlupro-3113",
+  "category": "biology",
+  "question": "Nymphaea odorata, a water lily, is an aquatic plant whose leaves and flowers float on the surface of the water. Which of the following characteristics would be expected for leaves of this plant?",
+  "options": [
+   "Stomata on the bottom surface with no water-conducting (xylem) cells",
+   "stomata on the bottom surface and relatively few water-conducting (xylem) cells",
+   "Stomata on the top surface with no water-conducting (xylem) cells",
+   "Stomata evenly distributed on both surfaces and relatively many water-conducting (xylem) cells",
+   "stomata on the top surface and relatively few water-conducting (xylem) cells",
+   "No stomata and relatively many water-conducting (xylem) cells",
+   "stomata on the top surface and relatively many water-conducting (xylem) cells",
+   "No stomata and relatively few water-conducting (xylem) cells",
+   "Stomata evenly distributed on both surfaces and relatively few water-conducting (xylem) cells",
+   "stomata on the bottom surface and relatively many water-conducting (xylem) cells"
+  ],
+  "answer": "E"
+ },
+ {
+  "id": "mmlupro-3617",
+  "category": "chemistry",
+  "question": "Using the following ionic radii, find the fractional void volume in (a)CsCl, (b)NaCl, (c)LiCl. Assume that the ions are hard spheres in contact. Ion Radius, \\AA Li^+ 0.60 Na^+ 0.95 Cs^+ 1.69 Cl - 1.81 InCsClthe positive ions and the negative ions each comprise a simple cubic lattice. Each ion has eight oppositely charged ions as nearest neighbors. InNaCland LiClthe ions of each sign comprise a face-centered cubic lattice. Each ion has six oppositely charged ions as nearest neighbors.",
+  "options": [
+   "0.29 for CsCl, 0.35 for NaCl, 0.21 for LiCl",
+   "0.34 for CsCl, 0.28 for NaCl, 0.26 for LiCl",
+   "0.32 for CsCl, 0.31 for NaCl, 0.22 for LiCl",
+   "0.33 for CsCl, 0.29 for NaCl, 0.27 for LiCl",
+   "0.35 for CsCl, 0.30 for NaCl, 0.25 for LiCl",
+   "0.27 for CsCl, 0.33 for NaCl, 0.22 for LiCl",
+   "0.30 for CsCl, 0.33 for NaCl, 0.20 for LiCl",
+   "0.28 for CsCl, 0.34 for NaCl, 0.24 for LiCl",
+   "0.316 for CsCl, 0.32 for NaCl, 0.23 for LiCl",
+   "0.31 for CsCl, 0.27 for NaCl, 0.25 for LiCl"
+  ],
+  "answer": "I"
+ },
+ {
+  "id": "mmlupro-5321",
+  "category": "other",
+  "question": "The government establishes a price floor in a market for a good in order to",
+  "options": [
+   "eliminate a surplus in the market",
+   "protect consumers from price hikes",
+   "increase government revenue",
+   "eliminate a shortage in the market",
+   "help buyers of the good",
+   "promote competition among sellers",
+   "help sellers of the good",
+   "control inflation",
+   "discourage consumption of the good",
+   "reduce production cost for the good"
+  ],
+  "answer": "G"
+ },
+ {
+  "id": "mmlupro-5326",
+  "category": "other",
+  "question": "Whose profile can you see on the front of dimes that are currently in circulation?",
+  "options": [
+   "Ulysses S. Grant",
+   "Benjamin Franklin",
+   "Thomas Jefferson",
+   "Franklin Roosevelt",
+   "John F. Kennedy",
+   "Andrew Jackson",
+   "Dwight D. Eisenhower",
+   "Theodore Roosevelt",
+   "Abraham Lincoln",
+   "George Washington"
+  ],
+  "answer": "D"
+ },
+ {
+  "id": "mmlupro-396",
+  "category": "business",
+  "question": "Mrs. Reynolds purchased $450 worth of carpeting on an easy payment plan that required $70 down, with the balance in 12 monthly payments of $35 each. What was the annual interest rate she paid?",
+  "options": [
+   "17.5%",
+   "23.5%",
+   "20.3%",
+   "15.0%",
+   "21.6%",
+   "18.2%",
+   "22.8%",
+   "24.9%",
+   "16.7%",
+   "19.4%"
+  ],
+  "answer": "J"
+ },
+ {
+  "id": "mmlupro-12181",
+  "category": "engineering",
+  "question": "Calculate the saturation concentration of oxygen in water exposedto dry air at 1 atm. and 25°C. Given the Henry's constantfor dissolved oxygen in water at 25°C = 4.12 × 10^9 [(Pa) / (mole of O_2/total mole of solution)]",
+  "options": [
+   "13.5 [(mg of O_2) / (liter of solution)]",
+   "6.45 [(mg of O_2) / (liter of solution)]",
+   "8.0 [(mg of O_2) / (liter of solution)]",
+   "8.5 [(mg of O_2) / (liter of solution)]",
+   "11.3 [(mg of O_2) / (liter of solution)]",
+   "5.8 [(mg of O_2) / (liter of solution)]",
+   "9.1792 [(mg of O_2) / (liter of solution)]",
+   "12.7 [(mg of O_2) / (liter of solution)]",
+   "7.6 [(mg of O_2) / (liter of solution)]",
+   "10.2 [(mg of O_2) / (liter of solution)]"
+  ],
+  "answer": "G"
+ },
+ {
+  "id": "mmlupro-5719",
+  "category": "other",
+  "question": "A bond with a five-year maturity, paying 8% coupons and with a face value of $100, is bought at 104.1 in year 0, when it is issued. If I need to sell the bond at the the end the third year, when its prevailing price is 82, what is my holding period return on this investment? (Assume coupons are not reinvested.) HINT: Accumulate all coupons.",
+  "options": [
+   "16%",
+   "23%",
+   "2%",
+   "0%",
+   "-21%",
+   "18%",
+   "10%",
+   "24%",
+   "-2%",
+   "-24%"
+  ],
+  "answer": "C"
+ },
+ {
+  "id": "mmlupro-2715",
+  "category": "psychology",
+  "question": "There are specific research designs and strategies used to gain the desired information. From your knowledge about the research designs and strategies, in which case is the MULTIPLE BASELINE DESIGN used?",
+  "options": [
+   "when reversal is not possible",
+   "when assignment is not possible",
+   "when selection is not possible",
+   "when there are not enough data available"
+  ],
+  "answer": "A"
+ },
+ {
+  "id": "mmlupro-5708",
+  "category": "other",
+  "question": "Inherent risk and control risk differ from detection risk in which of the following ways?",
+  "options": [
+   "Inherent risk and control risk can be completely eliminated.",
+   "Inherent risk and control risk exist as a result of the auditor’s judgment about materiality.",
+   "Detection risk is a result of the auditor's judgment while inherent risk and control risk are not.",
+   "Inherent risk and control risk are the result of the client's internal control system.",
+   "Inherent risk and control risk exist independently of the audit.",
+   "Inherent risk and control risk are eliminated through the audit process.",
+   "Inherent risk and control risk are controlled by the auditor.",
+   "Inherent risk and control risk are solely determined by the audit.",
+   "Detection risk is controlled by the client while inherent risk and control risk are not.",
+   "Inherent risk and control risk are calculated by the client."
+  ],
+  "answer": "E"
+ },
+ {
+  "id": "mmlupro-8329",
+  "category": "math",
+  "question": "Extend Example 1.4-6 to an $n$-sided die. That is, suppose that a fair $n$-sided die is rolled $n$ independent times. A match occurs if side $i$ is observed on the $i$ th trial, $i=1,2, \\ldots, n$. Find the limit of this probability as $n$ increases without bound.",
+  "options": [
+   "$1/\\pi$",
+   "$1 / e$",
+   "$\\pi/e$",
+   "$e$",
+   "$1-1/\\sqrt{e}$",
+   "$1/e^2$",
+   "$1+1 / e$",
+   "$ 1-1 / e$",
+   "$1-(1/e^2)$",
+   "$2/e$"
+  ],
+  "answer": "H"
+ },
+ {
+  "id": "mmlupro-5330",
+  "category": "other",
+  "question": "A farmer buys a new tractor for $40,000 and expects to use it for 20 years, after which the tractor will have a salvage value of $10,000. What is the straight-line depreciation that can be taken for the first year of ownership?",
+  "options": [
+   "1500",
+   "1800",
+   "2000",
+   "2100",
+   "2200",
+   "2250",
+   "1667",
+   "2300",
+   "2400",
+   "1900"
+  ],
+  "answer": "A"
+ },
+ {
+  "id": "mmlupro-1816",
+  "category": "law",
+  "question": "An American company operates as an importer and distributor of guitars manufactured by a foreign company, and maintains several warehouses throughout the U. S. for the wholesale distribution of the guitars. A warehouse located in a city handles the distribution of guitars for several state areas. The guitars and guitar strings are shipped separately to the city warehouse. The guitar strings are mingled, stacked, and stored in the warehouse along with various other guitar strings. The guitars, on the other hand, arrive completely assembled in their shipping crates and remain on the loading docks. The city imposes an ad valorem property tax on the guitars and strings. The power of the city to impose an ad valorem tax on the foreign company's guitars and/or strings would most likely be upheld under",
+  "options": [
+   "the necessary and proper clause.",
+   "the contract clause.",
+   "the import and export clause.",
+   "the equal protection clause.",
+   "the supremacy clause.",
+   "the commerce clause.",
+   "the due process clause.",
+   "the reserved power of the states as granted under the Tenth Amendment.",
+   "the establishment clause.",
+   "the privileges and immunities clause."
+  ],
+  "answer": "H"
+ },
+ {
+  "id": "mmlupro-11440",
+  "category": "engineering",
+  "question": "Two pounds of oxygen undergo a polytropic process in which they are compressed from an initial state of 14 psia and 70°F, to a final pressure of 98 psia along a path for which PV^1.3 = C. Using the polytropic equation calculate, (a) the heat transferred, and (b) the change of entropy for this process. Assume that for oxygen R = 0.062 Btu/1bm-°R c_p = 0.217 Btu/1bm-°R",
+  "options": [
+   "(a) - 34.2 Btu, (b) - 0.0166 Btu/°R",
+   "(a) - 36.2 Btu, (b) + 0.0034 Btu/°R",
+   "(a) - 28.2 Btu, (b) - 0.0666 Btu/°R",
+   "(a) - 32.2 Btu, (b) - 0.0366 Btu/°R",
+   "(a) - 30.2 Btu, (b) - 0.0566 Btu/°R",
+   "(a) - 29.2 Btu, (b) - 0.0566 Btu/°R",
+   "(a) - 35.2 Btu, (b) - 0.0066 Btu/°R",
+   "(a) - 27.2 Btu, (b) - 0.0766 Btu/°R",
+   "(a) - 31.2 Btu, (b) - 0.0466 Btu/°R",
+   "(a) - 33.2 Btu, (b) - 0.0266 Btu/°R"
+  ],
+  "answer": "I"
+ },
+ {
+  "id": "mmlupro-3622",
+  "category": "chemistry",
+  "question": "NH_4HS(s) = NH_3(g) + H_2S(g) 0.06 mole of solid NH_4HS are introduced into a 2.4 liter flask at 20° C. (a) Calculate the per cent of the solid that will have decomposed into NH_3 and H_2S at equilibrium. (b)Calculate the number of moles of ammonia that would have to be added to the flask to reduce the decomposition of the solid to 1%.",
+  "options": [
+   "36.1%, 0.763",
+   "40.5%, 0.895",
+   "39.8%, 0.845",
+   "37.33%, 0.833",
+   "38.5%, 0.867",
+   "45.0%, 0.950",
+   "41.2%, 0.872",
+   "34.2%, 0.721",
+   "35.6%, 0.777",
+   "42.7%, 0.913"
+  ],
+  "answer": "D"
+ },
+ {
+  "id": "mmlupro-7058",
+  "category": "economics",
+  "question": "Which of the following will shift the supply curve for textbooks to the left?",
+  "options": [
+   "An increase in printing costs",
+   "Expectations of future surpluses",
+   "A decrease in the demand for a substitute in production",
+   "An increase in the literacy rate",
+   "A decrease in the cost of labor for bookbinding",
+   "Expectations of future shortages",
+   "An increase in the demand for a complement in production",
+   "A decrease in the price of paper"
+  ],
+  "answer": "A"
+ },
+ {
+  "id": "mmlupro-1826",
+  "category": "law",
+  "question": "A victim and a defendant both worked as longshoremen at a shipyard. After the victim was shot to death, the defendant was tried for murder and acquitted. Following the acquittal, the victim's estate sued the defendant in a wrongful death action. During the civil trial, the victim's estate called a witness to testify. The witness, who worked with both men at the shipyard, testified that two weeks before the shooting, the victim came to work with a broken nose and said that the defendant had caused it. The attorney for the victim's estate then asked the witness the following question, \"Was the defendant present during your conversation with the victim, and if so, did he say anything about the victim's broken nose?\" The witness replied, \"Yes, the defendant was present, and after the victim told me that the defendant broke his nose, the defendant said, And that's only the beginning. \"Upon objection by the defendant's attorney, the witness's testimony is",
+  "options": [
+   "admissible, because it reports the defendant's adoptive admission of the victim's assertion.",
+   "inadmissible, because it is a character evidence.",
+   "admissible, because it is considered a prior bad act.",
+   "inadmissible, because it violates the defendant's right to confront the witnesses against him.",
+   "inadmissible, because it is a prejudicial evidence.",
+   "inadmissible, because of the principle of collateral estoppel.",
+   "admissible, because it is a statement made by a party opponent.",
+   "admissible, because it reports a declaration against interest.",
+   "inadmissible, because it is hearsay not within any recognized exception.",
+   "admissible, because it constitutes an excited utterance."
+  ],
+  "answer": "A"
+ },
+ {
+  "id": "mmlupro-10529",
+  "category": "computer science",
+  "question": "What are support vectors?",
+  "options": [
+   "The data outliers in an SVM.",
+   "The data points that are used to calculate the distance in an SVM.",
+   "The only examples necessary to compute f(x) in an SVM.",
+   "The data centroid.",
+   "All examples that have a zero weight αk in an SVM.",
+   "The examples farthest from the decision boundary.",
+   "All examples that fall within the decision boundary in an SVM."
+  ],
+  "answer": "C"
+ },
+ {
+  "id": "mmlupro-1897",
+  "category": "law",
+  "question": "A president of the senior class at a public high school, on his own initiative instituted among the students the practice of invoking divine blessing at the start of the daily luncheon served in the high school cafeteria. Although no teacher or school official either encouraged or discouraged the practice, all but two teachers, when present, joined in the invocation. A student and his parents protested to the school superintendent, but they refused to intervene on the grounds that the matter was entirely up to the students. Moreover, school board officials pointed out that the students who led the recital always sat at a table in the rear of the cafeteria and that no one was required to participate in the blessing. In an action by the student's parents to enjoin the daily luncheon invocation at the high school, the court will most likely",
+  "options": [
+   "grant relief, since the invocation violates the establishment clause of the First Amendment.",
+   "grant relief, since the primary effect of the invocation is to advance religious beliefs.",
+   "deny relief, since the invocation is not disruptive to the school environment.",
+   "grant relief, since the invocation constitutes a public display of religion in a public school.",
+   "deny relief, since the lunch hour is not part of the educational process.",
+   "deny relief, since the noncompulsory nature of the invocation would not be violative of the establishment clause.",
+   "deny relief, because the school has not officially endorsed the invocation."
+  ],
+  "answer": "A"
+ },
+ {
+  "id": "mmlupro-8286",
+  "category": "math",
+  "question": "The $n^{\\text{th}}$ term of a certain geometric series is given by $a\\cdot r^{n-1}$, where $a$ and $r$ are positive integers and $r$ is greater than 1. Bill picks out $k$ different numbers in this sequence, all of which have the same number of digits. What is the largest possible value of $k$?",
+  "options": [
+   "12",
+   "8",
+   "5",
+   "16",
+   "15",
+   "4",
+   "10",
+   "9",
+   "6",
+   "7"
+  ],
+  "answer": "F"
+ },
+ {
+  "id": "mmlupro-958",
+  "category": "law",
+  "question": "A defendant was smoking marijuana as he was driving home from work one afternoon. A police officer approached him on the freeway and stopped the car to issue a citation for speeding. As the defendant handed the officer his driver's license, the officer smelled burnt marijuana, saw the joint, and saw an open envelope on the seat next to the defendant containing a substance that looked like marijuana. The officer ordered the defendant out of the car, arrested him for unlawful possession of marijuana. The officer then searched the defendant and found a sealed envelope in the defendant's back pocket. Without asking the defendant's permission, the officer opened the envelope and discovered that it contained cocaine. The officer then unzipped one of the jacket pockets on the jacket the defendant was wearing and found more cocaine and arrested the defendant for possession of cocaine. The defendant was taken to the police station and immediately escorted to an interrogation room. He was given his Miranda warnings, waived his rights, and gave a statement admitting to possession of cocaine and marijuana. Which of the following is a correct statement of the applicable legal principles regarding the search of the defendant?",
+  "options": [
+   "Any evidence found in the possession of the defendant is admissible, regardless of how it was obtained.",
+   "One who drives an automobile on a public highway does not have a legitimate expectation of privacy.",
+   "If an officer smells marijuana, they are automatically allowed to search the entire vehicle and the person.",
+   "The defendant must give explicit permission for the officer to search their personal belongings, even after an arrest has been made.",
+   "If an individual effectively consents to a search of their person, the evidence gathered during the search is admissible.",
+   "The Fourth Amendment protects individuals from unlawful searches and seizures, making the search and the evidence inadmissible.",
+   "The officer is not permitted to search personal items found on the defendant after the arrest without a warrant.",
+   "The exclusionary rule requires that if an officer conducts an unconstitutional search, the evidence acquired in the course of the officer's subsequent activities is inadmissible.",
+   "The officer is only allowed to search the defendant after they have been formally charged with a crime.",
+   "When a police officer has made a lawful custodial arrest of an individual, he may, as a contemporaneous incident of that arrest, search the person of the individual."
+  ],
+  "answer": "J"
+ },
+ {
+  "id": "mmlupro-5351",
+  "category": "other",
+  "question": "The standard deviations of Stocks A and B are respectively 6% and 18%. If their correlation is 0.2 and an equal weighted portfolio is formed, what is the standard deviation of such a portfolio?",
+  "options": [
+   "11%",
+   "7%",
+   "6.30%",
+   "9.70%",
+   "3.40%",
+   "10%",
+   "8.50%",
+   "5%",
+   "12%",
+   "15%"
+  ],
+  "answer": "F"
+ },
+ {
+  "id": "mmlupro-8301",
+  "category": "math",
+  "question": "If r(t) = (6t+2)i + 5t^2j - 8tk, find the Binormal vector as [xi, yj, zk]. What are x, y, z? Return them as a list.",
+  "options": [
+   "[0.7, 0.0, 0.7]",
+   "[0.6, 0.0, 0.8]",
+   "[0.0, 0.8, 0.6]",
+   "[0.0, 0.7, 0.7]",
+   "[0.8, 0.6, 0.0]",
+   "[0.8, 0.0, 0.6]",
+   "[0.0, 0.6, 0.8]",
+   "[0.6, 0.8, 0.0]",
+   "[0.7, 0.7, 0.0]",
+   "[0.5, 0.5, 0.7]"
+  ],
+  "answer": "F"
+ },
+ {
+  "id": "mmlupro-8816",
+  "category": "math",
+  "question": "The mean of 7 numbers is 15. When an 8th number is added, the mean decreases to 12. What is the 8th number?",
+  "options": [
+   "15",
+   "–9",
+   "-15",
+   "12",
+   "-20",
+   "0",
+   "20",
+   "8",
+   "–12",
+   "9"
+  ],
+  "answer": "B"
+ },
+ {
+  "id": "mmlupro-138",
+  "category": "business",
+  "question": "If at the beginning of each month a deposit of $500 is made in an account that pays 8% compounded monthly, what will the final amount be after five years?",
+  "options": [
+   "39000.00",
+   "40500.00",
+   "33000.00",
+   "35000.00",
+   "36983.35",
+   "40000.00",
+   "31000.00",
+   "34500.00",
+   "42000.00",
+   "38500.00"
+  ],
+  "answer": "E"
+ },
+ {
+  "id": "mmlupro-7060",
+  "category": "economics",
+  "question": "Suppose that there are only two goods: x and y. Which of the following is NOT correct?",
+  "options": [
+   "One can have comparative advantage in producing both goods.",
+   "One can have both an absolute advantage and a comparative advantage in producing x.",
+   "One can have absolute advantage and no comparative advantage in producing x.",
+   "One can have comparative advantage and no absolute advantage in producing x."
+  ],
+  "answer": "A"
+ },
+ {
+  "id": "mmlupro-6272",
+  "category": "health",
+  "question": "Which of the following statements about the protein:energy ratio of the requirement is correct?\n",
+  "options": [
+   "Infants and children need the most protein dense food",
+   "Young adults need the most protein dense food",
+   "Infants are most susceptible to protein deficient diets",
+   "Adults in their middle age need the most protein dense food",
+   "Toddlers need the most protein dense food",
+   "Teenagers are most susceptible to protein deficient diets",
+   "The elderly are most susceptible to protein deficient diets",
+   "The elderly need the most protein dense food",
+   "Children are most susceptible to protein deficient diets",
+   "Pregnant women need the most protein dense food"
+  ],
+  "answer": "H"
+ },
+ {
+  "id": "mmlupro-9681",
+  "category": "physics",
+  "question": "A meter stick with a speed of 0.8c moves past an observer. In the observer’s reference frame, how long does it take the stick to pass the observer ?",
+  "options": [
+   "5.8 ns",
+   "2.2 ns",
+   "3.5 ns",
+   "4.2 ns",
+   "6.9 ns",
+   "7.1 ns",
+   "3.0 ns",
+   "2.5 ns",
+   "1.6 ns",
+   "4.6 ns"
+  ],
+  "answer": "H"
+ },
+ {
+  "id": "mmlupro-6238",
+  "category": "health",
+  "question": "A 54-year-old woman comes to the emergency department because of severe jaw pain since undergoing a painful dental procedure 1 day ago. The patient was prescribed codeine after the procedure and instructed to take the medication every 4 hours, but she has continued pain despite adherence to this analgesic regimen. Other members of her family also have experienced poor pain control with codeine. Which of the following is the most likely explanation for this therapeutic failure?",
+  "options": [
+   "Increased plasma protein-binding of codeine",
+   "Interference from the dental procedure",
+   "Insufficient dosage of codeine prescribed by the dentist",
+   "Allergic reaction to codeine preventing pain relief",
+   "Resistance to codeine developed over time",
+   "Decreased metabolism of codeine to morphine",
+   "Overuse of codeine leading to tolerance",
+   "Deficiency of κ receptors",
+   "Decreased absorption of codeine"
+  ],
+  "answer": "F"
+ },
+ {
+  "id": "mmlupro-4504",
+  "category": "chemistry",
+  "question": "Hund's rule requires that",
+  "options": [
+   "all electrons must have opposite spins in an orbital",
+   "no two electrons can have the same four quantum numbers",
+   "no two electrons can occupy the same orbital",
+   "no two electrons with the same spin can occupy an orbital",
+   "all electrons must occupy the highest energy level first",
+   "no two electrons can have opposite spins in an orbital",
+   "no two electrons can occupy separate orbitals",
+   "all electrons must fill the lowest energy level first",
+   "no two electrons can pair up if there is an empty orbital at the same energy level available",
+   "no three electrons can occupy the same orbital"
+  ],
+  "answer": "I"
+ },
+ {
+  "id": "mmlupro-7940",
+  "category": "math",
+  "question": "If A is a subset of the real line R and A contains each rational number, which of the following must be true?",
+  "options": [
+   "If A is countable, then A is open.",
+   "If A is closed, then A = R.",
+   "If A is uncountable, then A = R.",
+   "If A is uncountable, then A is open.",
+   "If A is countable, then A is closed.",
+   "If A is uncountable, then A is closed.",
+   "If A is countable, then A = R.",
+   "If A is closed, then A is uncountable."
+  ],
+  "answer": "B"
+ },
+ {
+  "id": "mmlupro-8336",
+  "category": "math",
+  "question": "A medical research team tests for tumor reduction in a sample of patients using three different dosages of an experimental cancer drug. Which of the following is true?",
+  "options": [
+   "There are three levels of a single explanatory variable.",
+   "There are three explanatory variables and one response variable.",
+   "There is one explanatory variable with three levels of response.",
+   "There is one explanatory variable and three corresponding response variables.",
+   "There are three separate explanatory variables, each with a single level of response.",
+   "There are three response variables and one explanatory variable.",
+   "Tumor reduction is the only response variable, but there are three explanatory variables corresponding to the different dosages.",
+   "Tumor reduction is the only explanatory variable, but there are three response variables corresponding to the different dosages.",
+   "There are three response variables, each corresponding to a different level of a single explanatory variable.",
+   "There is one response variable with three levels of explanation."
+  ],
+  "answer": "A"
+ },
+ {
+  "id": "mmlupro-133",
+  "category": "business",
+  "question": "What are characteristics of a programmed decision?",
+  "options": [
+   "Uncertain and low risk",
+   "Non-routine and complex",
+   "Low risk and certain",
+   "High risk and uncertain",
+   "Uncertain and non-routine",
+   "Risky and routine",
+   "Complex and risky",
+   "Certain and complex",
+   "Complex and certain",
+   "Routine and non-complex"
+  ],
+  "answer": "J"
+ },
+ {
+  "id": "mmlupro-6251",
+  "category": "health",
+  "question": "A 16-year-old girl is brought to the office by her mother because she is concerned that she may have contracted meningitis from her soccer teammate, who was diagnosed with meningococcal meningitis and admitted to the hospital yesterday. The patient's soccer team traveled to a neighboring state to participate in a tournament 1 week ago and she shared a hotel room with the girl who was hospitalized. The patient feels well but is concerned she may have \"caught the same bug.\" Medical history is remarkable for asthma. Medications include inhaled albuterol. Vital signs are temperature 37.2°C (98.9°F), pulse 64/min, respirations 16/min, and blood pressure 107/58 mm Hg. Physical examination shows no abnormalities. Which of the following is the most appropriate intervention for this patient at this time? ",
+  "options": [
+   "No intervention is needed at this time",
+   "Prescribe amoxicillin",
+   "Prescribe azithromycin",
+   "Administer a tetanus shot",
+   "Prescribe rifampin",
+   "Administer the meningococcal vaccine",
+   "Prescribe penicillin",
+   "Prescribe doxycycline",
+   "Administer the pneumococcal vaccine",
+   "Prescribe ibuprofen"
+  ],
+  "answer": "E"
+ },
+ {
+  "id": "mmlupro-9680",
+  "category": "physics",
+  "question": "Why are there no impact craters on the surface of Io?",
+  "options": [
+   "Any craters that existed have been eroded through the strong winds on Io's surface.",
+   "Io is protected by a layer of gas that prevents any objects from reaching its surface.",
+   "The gravitational pull of nearby moons prevent objects from hitting Io.",
+   "Io's magnetic field deflects incoming asteroids, preventing impact craters.",
+   "Io did have impact craters but they have all been buried in lava flows.",
+   "The surface of Io is made of a material that does not leave a visible impact crater.",
+   "Jupiter's strong gravity attracted the planetesimals more strongly than Io and thus none landed on its surface.",
+   "It is too small to have been hit during the Late Heavy Bombardment",
+   "Io's thick atmosphere burns up any objects before they can hit the surface."
+  ],
+  "answer": "E"
+ },
+ {
+  "id": "mmlupro-4471",
+  "category": "chemistry",
+  "question": "Clay contains 30 % AI_2 O_3, 55 % SiO_2, and 15 % H_2 O. What weight of limestone is required per ton of clay to carry out the following chemical change? 6CaCO_3 + AI_2O_3 + SiO_2\\rightarrow3CaO\\bulletAl_2 O_3 + 3CaO\\bulletSiO_2 + 6CO_2. (limestone)",
+  "options": [
+   "4.80 × 10^6 grams of CaCO_3",
+   "1.00 × 10^6 grams of CaCO_3",
+   "3.30 × 10^6 grams of CaCO_3",
+   "1.60 × 10^6 grams of CaCO_3",
+   "2.20 × 10^6 grams of CaCO_3",
+   "2.67 × 10^3 grams of CaCO_3",
+   "5.00 × 10^5 grams of CaCO_3",
+   "9.50 × 10^5 grams of CaCO_3",
+   "1.25 × 10^4 grams of CaCO_3",
+   "8.32 × 10^3 grams of CaCO_3"
+  ],
+  "answer": "D"
+ },
+ {
+  "id": "mmlupro-11417",
+  "category": "engineering",
+  "question": "Air at one atm. and 90°F moves at 140 ft/sec across a flat plate of length 3 ft. The temperature at the sur-face of the plate is 450°F. For a 1 ft. width, deter-mine the heat loss from the entire plate, and also the heat loss from the laminar and turbulent sections of the boundary layer. Then, assuming that the boundary layer is completely turbulent, calculate the heat loss.",
+  "options": [
+   "18,252 Btu/hr",
+   "11,200 Btu/hr",
+   "17,100 Btu/hr",
+   "20,450 Btu/hr",
+   "15,336 Btu/hr",
+   "13,750 Btu/hr",
+   "9,500 Btu/hr",
+   "2632 Btu/hr",
+   "12,704 Btu/hr",
+   "22,675 Btu/hr"
+  ],
+  "answer": "E"
+ },
+ {
+  "id": "mmlupro-9723",
+  "category": "physics",
+  "question": "Two objects, A and B, have equal charge and equal mass. Neither body is in motion because the gravitational and electrostatic forces between them are equal. If the mass of Object A is halved, equilibrium will be maintained if",
+  "options": [
+   "the charge on Object A were halved",
+   "the charge on Object B were doubled",
+   "both the mass and charge on Object A were halved",
+   "the charge on Object B were halved",
+   "the mass on Object B were doubled",
+   "both the mass and charge on Object B were doubled",
+   "the mass on Object A were doubled",
+   "the mass on Object B were halved",
+   "the charge on Object A were doubled",
+   "both the mass and charge on Object A were doubled"
+  ],
+  "answer": "H"
+ },
+ {
+  "id": "mmlupro-10616",
+  "category": "computer science",
+  "question": "DIMENSION A(10,10,10) Assuming that elements of the array are stored in lexicographic order of their indices, find displacements of the locations of: (a) A(5,6,7)(b) A(10,9,8)(c) A(1,5,9) relative to the location of A(1,1,1).",
+  "options": [
+   "354, 987, 48",
+   "456, 987, 84",
+   "456, 987, 48",
+   "456, 879, 48",
+   "456, 798, 84",
+   "345, 789, 84",
+   "546, 987, 48",
+   "345, 987, 48",
+   "354, 798, 84",
+   "546, 879, 84"
+  ],
+  "answer": "C"
+ },
+ {
+  "id": "mmlupro-7144",
+  "category": "economics",
+  "question": "When a security has a maturity value of $ 100,000 and the coupon rate is 5%, what are you willing to pay for it when it is due next year and the yield is 9%?",
+  "options": [
+   "$ 97,250",
+   "$ 96,330.28",
+   "$ 105,000",
+   "$ 101,000",
+   "$ 100,000",
+   "$ 94,175.23",
+   "$ 99,000",
+   "$ 98,000",
+   "$ 103,500",
+   "$ 92,500"
+  ],
+  "answer": "B"
+ },
+ {
+  "id": "mmlupro-7081",
+  "category": "economics",
+  "question": "Adam Smith relied on the workings of the profit motive in his theory of the 'invisible hand'. Yet, at the same time, he attacked businessmen for their attempts at 'conspiracy against the public'. How did Smith reconcile hiseconomic system with the greed of some businessmen? Would hecall for government intervention in order to break up these conspiracies ?",
+  "options": [
+   "Smith thought that the fear of public backlash and loss of reputation would keep businesses from engaging in conspiracies.",
+   "Smith believed in the unchecked profit motive.",
+   "Smith called for government intervention in business.",
+   "Smith believed that competition could regulate and control the profit motive, preventing price-fixing conspiracies. He would not call for government intervention.",
+   "Smith felt that moral sentiments would naturally discourage businessmen from conspiracies without requiring government intervention.",
+   "Smith advocated for strict regulations on business practices to prevent any form of conspiracy against the public.",
+   "Smith supported legal monopolies.",
+   "Smith trusted in a self-regulating economy where market forces would dissolve monopolies without any external interference.",
+   "Smith argued that consumers' choices would be enough to disrupt any attempts at a conspiracy against the public.",
+   "Smith suggested that the natural cycle of economic booms and busts would prevent long-term conspiracies and monopolistic practices."
+  ],
+  "answer": "D"
+ },
+ {
+  "id": "mmlupro-11427",
+  "category": "engineering",
+  "question": "Find the Fourier cosine series over the interval 0 < x < c for the function f(x) = x.",
+  "options": [
+   "f(x) \\sim (1 / 2)c + (2c / \\pi^2)\\infty\\sum_k=1 [{cos[(2k)\\pix/ c]} / (2k)^2]",
+   "f(x) \\sim (1 / 2)c + (4c / \\pi^2)\\infty\\sum_k=0 [{cos[(2k + 1)\\pix/ c]} / (2k + 1)^2]",
+   "f(x) \\sim (1 / 2)c - (4c / \\pi^2)\\infty\\sum_n=1 [1 / n^2]cos{(n\\pix) / c}",
+   "f(x) \\sim (1 / 2)c - (4c / \\pi^2)\\infty\\sum_k=0 [{cos[(2k + 1)\\pix/ c]} / (2k + 1)^2]",
+   "f(x) \\sim (1 / 2)c - (4c / \\pi^2)\\infty\\sum_k=1 [{cos[(2k)\\pix/ c]} / (2k)^2]",
+   "f(x) \\sim (1 / 2)c - (2c / \\pi^2)\\infty\\sum_n=0 [{1 - (-1)^n} / n^2]cos{(n\\pix) / c}",
+   "f(x) \\sim (1 / 2)c + (4c / \\pi^2)\\infty\\sum_n=1 [{(-1)^n} / n^2]cos{(n\\pix) / c}",
+   "f(x) \\sim (1 / 2)c + (2c / \\pi^2)\\infty\\sum_n=1 [{1 - (- 1)^n} / n^2]cos{(n\\pix) / c}",
+   "f(x) \\sim (1 / 2)c + (2c / \\pi^2)\\infty\\sum_n=1 [(-1)^n / n^2]cos{(n\\pix) / c}",
+   "f(x) \\sim (1 / 2)c - (2c / \\pi^2)\\infty\\sum_n=1 [{1 - (- 1)^n} / n^2]cos{(n\\pix) / c}"
+  ],
+  "answer": "D"
+ },
+ {
+  "id": "mmlupro-2770",
+  "category": "psychology",
+  "question": "At birth, the least developed part of the brain is the",
+  "options": [
+   "visual system",
+   "thalamus",
+   "frontal lobe",
+   "brain stem",
+   "parietal lobe",
+   "cerebellum",
+   "cortex",
+   "basal ganglia",
+   "hypothalamus",
+   "limbic system"
+  ],
+  "answer": "G"
+ },
+ {
+  "id": "mmlupro-7084",
+  "category": "economics",
+  "question": "When capital consumption in an economy equals $500,000, andthe GNP is $2,050,000, what is the NNP?",
+  "options": [
+   "$2,100,000",
+   "$1,950,000",
+   "$1,500,000",
+   "$2,500,000",
+   "$1,550,000",
+   "$2,550,000",
+   "$1,450,000",
+   "$1,750,000",
+   "$2,000,000",
+   "$1,600,000"
+  ],
+  "answer": "E"
+ },
+ {
+  "id": "mmlupro-3063",
+  "category": "biology",
+  "question": "Why is it that in most ecological successions the last stageis longlasting?",
+  "options": [
+   "The climax stage is characterized by rapid species turnover and high instability",
+   "Successional stages progress more rapidly as they approach the climax stage",
+   "Climax community is more prone to environmental changes",
+   "Climax communities are less resilient to disturbances",
+   "Climax community is more stable, has complex organization, larger organic structure, and more balanced metabolism",
+   "Climax communities are dominated by early-successional species",
+   "Climax stage is short-lived",
+   "Climax communities are static and unchanging",
+   "Climax communities have fewer species and simpler interactions",
+   "Each successional stage is equally likely to be long-lasting"
+  ],
+  "answer": "E"
+ },
+ {
+  "id": "mmlupro-9673",
+  "category": "physics",
+  "question": "(1) Where is the near point of an eye for which a spectacle lens of power + 2dioptersis prescribed? (2) Where is the far point of an eye for which a spectacle lens of power - 0.5diopteris prescribed for distant vision?",
+  "options": [
+   "30 cm, -150 cm",
+   "40 cm, -170 cm",
+   "65 cm, -210 cm",
+   "50 cm, -240 cm",
+   "55 cm, -160 cm",
+   "50 cm, -200 cm",
+   "35 cm, -190 cm",
+   "60 cm, -250 cm",
+   "45 cm, -220 cm",
+   "40 cm, -180 cm"
+  ],
+  "answer": "F"
+ },
+ {
+  "id": "mmlupro-4465",
+  "category": "chemistry",
+  "question": "The specific rotation [(\\alpha)^25°_D] of L-alanine is + 1.8. The specific rotation [(\\alpha)^25°_D] of L-alanine is + 1.8. Calculate the observed rotation of a 1.10 M solution in a 2.5-dm polarimeter tube at 25°C.",
+  "options": [
+   "2.20°",
+   "1.76°",
+   "5.28°",
+   "3.96°",
+   "0.44°",
+   "4.40°",
+   "0.22°",
+   "1.10°",
+   "0.88°",
+   "2.64°"
+  ],
+  "answer": "E"
+ },
+ {
+  "id": "mmlupro-7130",
+  "category": "economics",
+  "question": "If every country in the world has the exact same opportunity costs, so that no nation has a comparative advantage in any line of production, could there still be a basis for trade?",
+  "options": [
+   "Trade would cease without a comparative advantage",
+   "Trade is solely based on comparative advantage",
+   "Differences in technology and production methods could create opportunities for trade, even if the opportunity costs are the same.",
+   "Without comparative advantage, it is impossible for trade to occur",
+   "Differences in taste, leading to exchange between nations, would stimulate trade regardless of the absence of comparative advantages."
+  ],
+  "answer": "E"
+ },
+ {
+  "id": "mmlupro-6226",
+  "category": "health",
+  "question": "Examination of a patient indicates that they have a medially directed strabismus (squint). This could be due to damage to the",
+  "options": [
+   "oculomotor nerve.",
+   "accessory nerve.",
+   "trochlear nerve.",
+   "ophthalmic trigeminal nerve.",
+   "optic nerve.",
+   "vestibulocochlear nerve.",
+   "facial nerve.",
+   "hypoglossal nerve.",
+   "glossopharyngeal nerve.",
+   "abducens nerve."
+  ],
+  "answer": "J"
+ },
+ {
+  "id": "mmlupro-2783",
+  "category": "psychology",
+  "question": "Erikson's initiative versus guilt stage is most closely related to Freud's",
+  "options": [
+   "id stage.",
+   "preconscious stage.",
+   "unconscious stage.",
+   "genital stage.",
+   "anal stage.",
+   "ego stage.",
+   "latency period.",
+   "conscious stage.",
+   "phallic stage.",
+   "oral stage."
+  ],
+  "answer": "I"
+ },
+ {
+  "id": "mmlupro-2768",
+  "category": "psychology",
+  "question": "MRI is preferred over CT (computed tomography) in all of the following scenarios, EXCEPT:",
+  "options": [
+   "The detection of spinal cord injuries",
+   "The detection of white matter abnormalities",
+   "The detection of soft tissue injuries",
+   "The detection of a small tumor",
+   "The detection of lung cancer",
+   "The detection of acute cerebral infarct",
+   "The detection of brain aneurysms",
+   "The detection of a skull fracture",
+   "The detection of heart disease",
+   "The detection of liver abnormalities"
+  ],
+  "answer": "H"
+ },
+ {
+  "id": "mmlupro-3055",
+  "category": "biology",
+  "question": "A certain species of land snail exists as either a cream color or a solid brown color. Intermediate individuals are relatively rare. Which of the following terms best describes this?",
+  "options": [
+   "selective pressure",
+   "artificial selection",
+   "neutral selection",
+   "sexual selection",
+   "diversifying selection",
+   "directional selection",
+   "frequency-dependent selection",
+   "disruptive selection",
+   "stabilizing selection",
+   "balancing selection"
+  ],
+  "answer": "H"
+ },
+ {
+  "id": "mmlupro-7090",
+  "category": "economics",
+  "question": "What is meant by the \"double taxation\" problem in the corporate income tax system?",
+  "options": [
+   "Double taxation refers to applying two different types of taxes on the same income source",
+   "Double taxation means that taxes are applied both to revenue and profits of a corporation",
+   "Double taxation is when an individual is taxed twice on their personal income for the same tax year",
+   "Double taxation refers to paying taxes twice in two different tax years",
+   "Double taxation refers to the process of taxing imported goods twice",
+   "Double taxation refers to companies paying the same tax in two different states",
+   "Double taxation occurs when two or more shareholders are taxed for the same income",
+   "Double taxation refers to paying both state and federal taxes",
+   "Double taxation arises when a corporation is taxed for its earnings and also for the investments it makes with those earnings",
+   "Double taxation refers to the fact that some corporate income is taxed twice: once at the corporate level and again at the personal level when dividends are distributed to stockholders."
+  ],
+  "answer": "J"
+ },
+ {
+  "id": "mmlupro-3062",
+  "category": "biology",
+  "question": "Which of the following is the symplastic pathway for the movement of sucrose from the site of photosynthesis in mesophyll cells into the phloem?",
+  "options": [
+   "Bundle sheath, companion cell, phloem parenchyma, fibers",
+   "Phloem parenchyma, bundle sheath, fibers, companion cell",
+   "Bundle sheath, phloem parenchyma, companion cell, sieve tube",
+   "Bundle sheath, fibers, companion cell, sieve tube",
+   "Fibers, bundle sheath, companion cell, sieve tube",
+   "Fibers, phloem parenchyma, bundle sheath, tracheids",
+   "Phloem parenchyma, fibers, bundle sheath, tracheids",
+   "Companion cells, phloem parenchyma, fibers, sieve tube",
+   "Fibers, phloem parenchyma, companion cell, sieve tube",
+   "Companion cell, bundle sheath, fibers, sieve tube"
+  ],
+  "answer": "C"
+ },
+ {
+  "id": "mmlupro-5740",
+  "category": "other",
+  "question": "Which of the following characteristics describe 'Category B' agents, as defined by the US Centers for Disease Control?",
+  "options": [
+   "Category B agents are diseases that only affect animals and pose no direct threat to humans.",
+   "Category B agents refer to diseases that are prevalent in underdeveloped regions and pose little threat to developed countries.",
+   "Category B agents are those that have been eradicated but could potentially reemerge due to lowered immunity in the population.",
+   "Category B agents are those that present little to no risk or morbidity within infected populations, but can have detrimental effects on the ability of a group to perform physical tasks.",
+   "Category B agents are non-communicable diseases that pose a high threat to individuals but a low threat to population health.",
+   "Category B agents are characterised by a low mortality rate and are easy to prevent through vaccination.",
+   "Category B agents are characterised by high mortality rates and include agents which are difficult to treat medically.",
+   "Unlike Category A agents, B agents refer to emerging security threats which have the potential to be utilised as biological weapons after further development.",
+   "Category B agents include food and water security threats, with moderate morbidity rates.",
+   "Unlike Category A agents, Category B agents refer to diseases that are easily transmitted through air."
+  ],
+  "answer": "I"
+ },
+ {
+  "id": "mmlupro-10999",
+  "category": "philosophy",
+  "question": " In responding to terrorism, says Walzer, it is particularly important that",
+  "options": [
+   "we isolate the terrorists and cut off their resources.",
+   "we focus on increasing security measures rather than retaliation.",
+   "we use the same tactics as terrorists to understand their methods.",
+   "we attack the lower-ranking terrorists first.",
+   "we take immediate military action against the terrorists.",
+   "we make an effort to convince the terrorists that they are acting wrongly.",
+   "we publicly condemn the terrorists' actions.",
+   "we avoid harming terrorists to the same extent that we would avoid harming innocent civilians.",
+   "we negotiate with the terrorists to reach a peaceful resolution.",
+   "we do not repeat the wrongs of terrorism in the process."
+  ],
+  "answer": "J"
+ },
+ {
+  "id": "mmlupro-10595",
+  "category": "computer science",
+  "question": "A starvation-free job-scheduling policy guarantees that no job waits indefinitely for service. Which of the following job-scheduling policies is starvation-free?",
+  "options": [
+   "Youngest job first",
+   "Least frequently used",
+   "Round-robin",
+   "Most recently used",
+   "Longest job first",
+   "Random job selection",
+   "Priority queuing",
+   "Shortest job first"
+  ],
+  "answer": "C"
+ },
+ {
+  "id": "mmlupro-3104",
+  "category": "biology",
+  "question": "Mosquitoes resistant to the pesticide DDT first appeared in India in 1959 within 15 years of widespread spraying of the insecticide. Which of the following statement best explains how the resistant mosquitoes arose?",
+  "options": [
+   "The mosquitoes reproduced at such a fast rate that they evolved to become resistant to DDT.",
+   "Although DDT is effective against a wide range of insects, it is not effective against mosquitoes.",
+   "Some mosquitoes experienced a mutation after being exposed to DDT that made them resistant to the insecticide. Then their population expanded because these moquitoes had no competition.",
+   "The mosquitoes developed a resistance because the DDT used was of a lesser concentration.",
+   "The mosquitoes developed a resistance to DDT over time due to constant exposure.",
+   "DDT is generally a very effective insecticide. One can only conclude that it was manufactured improperly.",
+   "The resistant mosquitoes were imported from a different area where DDT was not used.",
+   "All the mosquitoes were initially resistant to DDT, but the resistant ones were better at surviving.",
+   "Some mosquitoes were already resistant to DDT when DDT was first sprayed. Then their population expanded because all the susceptible mosquitoes had been exterminated.",
+   "The mosquitoes were initially resistant to DDT, but due to a mutation, they lost their resistance."
+  ],
+  "answer": "I"
+ },
+ {
+  "id": "mmlupro-10940",
+  "category": "philosophy",
+  "question": "Feinberg claims that the best way to pursue happiness is to:",
+  "options": [
+   "strive for success.",
+   "pursue knowledge.",
+   "pursue happiness.",
+   "focus on material wealth.",
+   "none of the above.",
+   "help others to be happy.",
+   "forget about happiness.",
+   "live in the moment.",
+   "avoid pain.",
+   "pursue pleasure."
+  ],
+  "answer": "G"
+ },
+ {
+  "id": "mmlupro-9676",
+  "category": "physics",
+  "question": "The line width of a He-Ne laser is 10^3 Hz. The operating wavelength is 6328A° and the power is 1milliwatt. (a) How many photons are emitted per second? (b) If the output beam is 1 mm in diameter, at what temperature would a blackbody have to be in order to emit the same number of photons from an equal area and over the same frequency interval as the laser?",
+  "options": [
+   "3.5 × 10^15 photons/sec, 6.2 × 10^9 K",
+   "3.2 × 10^15 photons/sec, 6.0 × 10^9 K",
+   "5.0 × 10^15 photons/sec, 6.1 × 10^9 K",
+   "1.6 × 10^15 photons/sec, 6.2 × 10^9 K",
+   "2.8 × 10^15 photons/sec, 6.5 × 10^9 K",
+   "2.5 × 10^15 photons/sec, 6.4 × 10^9 K",
+   "3.2 × 10^15 photons/sec, 5.9 × 10^9 K",
+   "3.0 × 10^15 photons/sec, 5.8 × 10^9 K",
+   "4.5 × 10^15 photons/sec, 5.7 × 10^9 K",
+   "4.5 × 10^15 photons/sec, 6.3 × 10^9 K"
+  ],
+  "answer": "G"
+ },
+ {
+  "id": "mmlupro-2784",
+  "category": "psychology",
+  "question": "Define job satisfaction and explain how the discrepancy theorydeter mines job satisfaction.",
+  "options": [
+   "Job satisfaction is defined as the difference between a person's expectations and perceptions about a given situation. The discrepancy theory determines job satisfaction by examining the extent of the difference between an individual's expectations and perceptions.",
+   "Job satisfaction is how much a person likes their job.",
+   "Job satisfaction is the feeling of accomplishment one gets after completing a task, and discrepancy theory is unrelated to job satisfaction.",
+   "Discrepancy theory determines job satisfaction by comparing a person's job performance to their colleagues' performance.",
+   "Discrepancy theory determines job satisfaction by the alignment of an individual's work values with the company's culture.",
+   "Job satisfaction is solely based on a person's salary.",
+   "Job satisfaction is the level of stress experienced in the workplace, and discrepancy theory assesses satisfaction by the amount of stress relative to stress coping mechanisms.",
+   "Discrepancy theory suggests job satisfaction is based on the difference between an individual's job role and their personal interests.",
+   "Job satisfaction is measured by the number of vacation days an employee receives.",
+   "Job satisfaction is a static state of contentment in one's career, and discrepancy theory posits that satisfaction does not fluctuate over time."
+  ],
+  "answer": "A"
+ },
+ {
+  "id": "mmlupro-10536",
+  "category": "computer science",
+  "question": "Let a undirected graph G with edges E = {<0,1>,<0,2>,<0,3>,<3,5>,<2,3>,<2,4>,<4,5>}, which <A,B> represent Node A is connected to Node B. What is the shortest path from node 0 to node 5? Represent the path as a list.",
+  "options": [
+   "[0, 2, 3, 4, 5]",
+   "[0, 2, 3, 5]",
+   "[0, 1, 2, 3, 4, 5]",
+   "[0, 1, 2, 4, 5]",
+   "[0, 2, 4, 5]",
+   "[0, 1, 3, 5]",
+   "[0, 1, 4, 5]",
+   "[0, 3, 5]",
+   "[0, 3, 2, 4, 5]",
+   "[0, 1, 2, 3, 5]"
+  ],
+  "answer": "H"
+ },
+ {
+  "id": "mmlupro-2696",
+  "category": "psychology",
+  "question": "Alice A., who has a master's degree in clinical psychology but is not licensed, is hired by a community mental health clinic to, among other things, administer several standard psychological tests to adult clients. According to ethical guidelines, this is:",
+  "options": [
+   "acceptable as long as a professional clinical psychologist co-signs Alice’s evaluations.",
+   "unacceptable since Alice does not have a doctoral degree.",
+   "acceptable as long as Alice has a professional counselor supervising her activities.",
+   "unacceptable since Alice is not a licensed psychologist.",
+   "acceptable as long as a professional clinical psychologist supervises Alice’s activities.",
+   "unacceptable since Alice does not have a PhD in clinical psychology.",
+   "acceptable as long as Alice is pursuing her licensure.",
+   "unacceptable since Alice does not have a specialization in psychological testing.",
+   "acceptable if the clinic has a liability insurance covering Alice's activities.",
+   "acceptable as long as Alice receives additional training and certification in administering psychological tests."
+  ],
+  "answer": "E"
+ },
+ {
+  "id": "mmlupro-10973",
+  "category": "philosophy",
+  "question": " Self-sacrifice is an important theme for which Buddhist thinker?",
+  "options": [
+   "Mahasi Sayadaw",
+   "Bhikkhu Bodhi",
+   "Zen Master Seung Sahn",
+   "Shaku Soyen",
+   "Pema Chödrön",
+   "Daisetsu T. Suzuki",
+   "Thich Nhat Hanh",
+   "Walpola Rahula",
+   "The Dalai Lama",
+   "Ajahn Chah"
+  ],
+  "answer": "G"
+ },
+ {
+  "id": "mmlupro-2765",
+  "category": "psychology",
+  "question": "The Leiter International Performance Scale would be most useful for measuring the intelligence of:",
+  "options": [
+   "adults with speech impairments.",
+   "children under the age of two.",
+   "adults who are mentally retarded.",
+   "adults with physical disabilities.",
+   "children with hearing impairments.",
+   "children with learning disabilities.",
+   "children with visual impairments.",
+   "elderly people with memory loss.",
+   "teenagers with emotional disorders.",
+   "adults with visual impairments."
+  ],
+  "answer": "E"
+ },
+ {
+  "id": "mmlupro-6191",
+  "category": "health",
+  "question": "Which of the following vitamins is required for fatty acid b-oxidation?\n",
+  "options": [
+   "Vitamin C",
+   "Vitamin E",
+   "Vitamin B12",
+   "Thiamin",
+   "Riboflavin",
+   "Folic Acid",
+   "Vitamin D",
+   "Vitamin K",
+   "Biotin"
+  ],
+  "answer": "E"
+ },
+ {
+  "id": "mmlupro-10601",
+  "category": "computer science",
+  "question": "Statement 1| Traditional machine learning results assume that the train and test sets are independent and identically distributed. Statement 2| In 2017, COCO models were usually pretrained on ImageNet.",
+  "options": [
+   "True, False",
+   "False, Not stated",
+   "False, False",
+   "False, True",
+   "Not stated, False",
+   "True, Not stated",
+   "True, Not applicable",
+   "True, True",
+   "Not stated, True",
+   "Not stated, Not stated"
+  ],
+  "answer": "H"
+ },
+ {
+  "id": "mmlupro-6201",
+  "category": "health",
+  "question": "Under conditions of metabolic or other stress, which of the following amino acids generally regarded as being dispensable may be required in greater amount than can readily be synthesised in the body?\n",
+  "options": [
+   "Glutamate",
+   "Tyrosine",
+   "Alanine",
+   "Glutamine",
+   "Arginine",
+   "Glycine",
+   "Proline",
+   "Cysteine",
+   "Aspartate",
+   "Serine"
+  ],
+  "answer": "F"
+ },
+ {
+  "id": "mmlupro-10984",
+  "category": "philosophy",
+  "question": " Which of the given formulas of PL is the best symbolization of the following sentence?\nIf Beth rides her bike, she gets to work earlier.",
+  "options": [
+   "W ∨ B",
+   "B ⊃ W",
+   "B ∨ W",
+   "¬B ⊃ W",
+   "W ⊃ B",
+   "¬W ⊃ B",
+   "B ≡ ¬W",
+   "B ≡ W",
+   "B & W",
+   "Both A and B"
+  ],
+  "answer": "B"
+ },
+ {
+  "id": "mmlupro-3110",
+  "category": "biology",
+  "question": "Which of the following is an incorrect statement about gel electrophoresis?",
+  "options": [
+   "DNA migrates from positive charge to negative charge.",
+   "Smaller DNA travels faster.",
+   "The DNA migrates only when the current is running.",
+   "The longer the current is running, the farther the DNA will travel."
+  ],
+  "answer": "A"
+ },
+ {
+  "id": "mmlupro-9688",
+  "category": "physics",
+  "question": "A vessel contains $1.15 \\mathrm{~g}$ liq $\\mathrm{H}_2 \\mathrm{O}$ in equilibrium with water vapor at $30 .{ }^{\\circ} \\mathrm{C}$. At this temperature, the vapor pressure of $\\mathrm{H}_2 \\mathrm{O}$ is 31.82 torr. What volume increase is necessary for all the water to evaporate?\n",
+  "options": [
+   "58.6 L",
+   "21.4 L",
+   "32.5 $\\mathrm{~L}$",
+   "45.2 $\\mathrm{~L}$",
+   "25.7 $\\mathrm{~L}$",
+   "12.8 L",
+   "54.1 L",
+   "37.9$\\mathrm{~L}$",
+   "29.3 L",
+   "40.7 L"
+  ],
+  "answer": "H"
+ },
+ {
+  "id": "mmlupro-11004",
+  "category": "philosophy",
+  "question": " Which of the following is an example of a duty that corresponds to a right to goods and service?",
+  "options": [
+   "John's duty to return to Mary that car that he borrowed from her",
+   "John's duty to allow Mary to pursue goals that she values",
+   "John's duty to not harm Mary",
+   "John's duty to not commit suicide"
+  ],
+  "answer": "A"
+ }
+]

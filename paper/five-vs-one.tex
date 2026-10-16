@@ -1,0 +1,302 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\usepackage[numbers]{natbib}
+
+\title{Are Five AI Agents Better Than One? Not Always.\\[4pt]
+\large A Pilot of Multi-Model Deliberation with a Pre-Specified Test}
+
+\author{Efi Ben Dor\\
+Independent researcher; Kickaround (\url{https://kickaround.app})\\
+\texttt{bendor@kickaround.app}}
+
+\date{October 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Does a five-model written verdict outperform the strongest individual model on known-answer questions? We evaluated a source-derived replay of Kickaround, a service in which five models answer separately, respond to each other, and one participant writes a verdict. We attempted 200 questions from MMLU-Pro and SimpleQA; 196 met the declared inclusion rule. The verdict scored 78.6\%, versus 82.7\% for the strongest individual first-round model on this sample (exact McNemar $p=0.17$), failing the pre-specified criterion for superiority. This does not establish inferiority or equivalence. In an exploratory analysis, a round-two vote excluding abstentions scored 86.2\%, versus 78.6\% for the verdict (16:1 discordant pairs, $p<0.001$). The abstention rule was chosen after inspecting the data; with abstentions voting, the gap was smaller and not significant. Much of the SimpleQA vote--verdict gap reflected verdict abstention. Lexical unanimity in round one was associated with 89/91 correct votes, but mostly occurred on MMLU-Pro and is not a validated confidence score. Limitations include an adapted grader using the same model as the strongest participant, two incomplete second rounds, differences from production orchestration, and no matched-compute or repeated-run controls. These results motivate prospective tests of aggregation and stopping policies rather than general claims about multi-model superiority.
+\end{abstract}
+
+\section{Introduction}
+
+A growing class of consumer and professional tools sends one question to several LLMs and returns a combined answer. Some show the models' answers side by side; others have the models discuss and then summarize. The implied promise is the old one of the wisdom of crowds: independent, diverse judges, aggregated, should beat any single judge.
+
+Research on multi-agent debate supports a weaker version of that promise. Debate among copies of one model can improve factuality and reasoning \citep{du2023}, and mixing different models helps more than mixing copies \citep{chen2024reconcile}. But careful comparisons find that much of the gain attributed to debate comes from voting, not from the debate \citep{choi2025}, and that debate protocols do not reliably beat simpler ensembling such as self-consistency \citep{smit2024,wang2023sc}.
+
+This paper studies a particular product configuration: five vendors' models, the service's default prompts, two rounds, and a verdict written by a participant. The harness was derived from the deployed service's source; it was not a measurement of live production traffic. We asked one pre-specified primary question: does the verdict outperform the strongest individual first-round model on this sample? Intermediate answers also permit exploratory comparisons of voting rules, lexical agreement and verdict writing.
+
+Our contributions are:
+\begin{enumerate}
+  \item A pilot that did not meet its pre-specified superiority criterion on 196 paired questions (Section~\ref{sec:prereg}).
+  \item An exploratory comparison in which an abstention-excluding round-two vote scored 7.7 percentage points above the verdict (Section~\ref{sec:verdict}).
+  \item A descriptive association between lexical agreement and accuracy, with dataset composition and normalization caveats (Section~\ref{sec:agreement}).
+  \item An audit of abstention handling, incomplete replies and the limitations of a rotating verdict writer (Sections~\ref{sec:abstain} and \ref{sec:judge}).
+\end{enumerate}
+
+\section{Related work}
+
+\paragraph{Multi-agent debate.} \citet{du2023} showed that several instances of one model, reading each other's answers over rounds, become more accurate and more factual. \citet{liang2023} introduced debate to counter a single model's tendency to stick with its first idea. \citet{chen2024reconcile} (ReConcile) ran a round table among different models with confidence-weighted voting and attributed much of the gain to model diversity, a point argued more broadly by \citet{zhang2025stop}.
+
+\paragraph{Voting versus debating.} \citet{wang2023sc} showed that sampling one model several times and taking the majority answer (self-consistency) is a strong baseline, and \citet{li2024more} showed that accuracy keeps rising with the number of sampled agents under plain voting. \citet{smit2024} found that debate systems do not reliably beat such baselines unless carefully tuned. \citet{choi2025} separated debate into voting and discussion and found that majority voting accounts for most of the gains attributed to debate. Our exploratory comparisons examine voting alongside a final free-text verdict in this specific configuration.
+
+\paragraph{Aggregators and judges.} Mixture-of-Agents \citep{wang2024moa} uses an aggregator to write an answer from other models' outputs. LLM-Blender \citep{jiang2023llmblender} combines pairwise ranking with generative fusion of selected candidates. These are relevant precedents for written aggregation. LLM-as-judge research \citep{zheng2023judge} documents position and self-preference biases; our writer assignments do not isolate either bias or a causal writer-identity effect.
+
+\paragraph{Calibration.} Single models carry information about their own correctness \citep{kadavath2022}. Cross-model semantic disagreement has also been studied alongside self-consistency for uncertainty quantification \citep{hamidieh2026disagreement}. Our simpler lexical agreement analysis is descriptive; we do not fit or validate a calibration model.
+
+\section{System and setup}
+
+\subsection{The service}
+Kickaround is a public web service in which a person posts a question and five agents reply: Claude, GPT, Gemini, Grok and Muse, reached through OpenRouter. In round one, the five reply at the same time to the same transcript, so none sees another first-round answer. This is isolation of the calls, not statistical independence of their errors. In round two, each sees all five round-one replies and responds, saying where it agrees and disagrees. Then one agent, the one that went first in round one (a rotating order), writes a short verdict: the best move, why, what is still open, and how many agents back it.
+
+\subsection{Models}
+The five default models configured for the run (October 13, 2026, Pacific time), by OpenRouter ID:
+\begin{center}
+\begin{tabular}{ll}
+Claude & \texttt{anthropic/claude-sonnet-5.5} \\
+GPT & \texttt{openai/gpt-6.1-sol} \\
+Gemini & \texttt{google/gemini-3.8-flash} \\
+Grok & \texttt{x-ai/grok-4.7} \\
+Muse & \texttt{meta/muse-spark-1.3} \\
+\end{tabular}
+\end{center}
+All calls used \texttt{max\_tokens} 6000 and no temperature override.
+
+\subsection{Faithfulness to the deployed service}
+The harness copies the default model IDs, opine and verdict system text, transcript labels, two concurrent rounds, 6,000-token cap and 2- then 5-second waits for retryable HTTP errors. Appendix~\ref{app:prompts} describes the generation prompts; their exact wording belongs to the service and is withheld. The same question is used throughout a run, with a requested final answer line.
+
+The replay differs from production in several ways. It appends replies in invocation order after each round completes; production stores them in completion order. It rotates by question index and reuses that order in both rounds, whereas production advances a shared rotation each round. The harness retries network exceptions and timeouts; production returns an error for those exceptions. Runs used 180- or 300-second call timeouts, versus production's 180 seconds. The harness lacks production's shared per-model concurrency gates, database and app-attribution headers. It also omits the 60,000-character transcript limit, although inspected transcripts were well below that limit. These differences may affect order sensitivity and timing; measured latency is harness latency, not production latency.
+
+The SimpleQA request for a short answer reduces the space for discussion. The verdict's action-oriented ``Best move'' prompt may also encourage a refusal or advice rather than a factual answer. This evaluates the adapted product prompts, not an optimized factual-debate protocol.
+
+\subsection{Questions}
+We selected 100 questions from each of two public sets using the recorded seed 20261012. The stored samples are included in the public release, but no pinned source revision or executable sampling script was retained:
+\begin{itemize}
+  \item \textbf{MMLU-Pro} \citep{wang2024mmlupro}: multiple-choice with up to ten options, up to eight questions per category across 13 of its 14 categories. Graded by exact letter.
+  \item \textbf{SimpleQA} \citep{wei2024simpleqa}: short factual questions with one correct answer, chosen by its authors to be hard for frontier models. Graded with a shortened adaptation of SimpleQA's reference grader prompt (correct, incorrect, not attempted), run on \texttt{google/gemini-3.8-flash}. ``I don't know'' is graded not attempted without a grader call. Only ``correct'' counts. The adaptation omits reference guidance/examples on numeric precision, implied information, extra gold-answer detail, name typos and some hedging cases. The grader ID is identical to the evaluated Gemini model. There was no independent blinded grading validation.
+\end{itemize}
+
+\subsection{Conditions}
+All conditions come from the same run of each question, so comparisons are paired:
+\begin{enumerate}
+  \item \textbf{Each model alone}: its round-one answer, written without seeing the others, but with the shared-board system prompt that names the other agents.
+  \item \textbf{Round-one majority (pre-registered)}: the most common of the five round-one answers (a plurality); ties go to the earliest answer in the assigned order. ``I don't know'' counts as an answer.
+  \item \textbf{Round-one majority, abstentions not voting} (added after the run): the same, ignoring ``I don't know'' unless all five say it.
+  \item \textbf{Round-two majority}, with and without abstentions voting.
+  \item \textbf{The verdict}: the answer on the last line of the verdict.
+\end{enumerate}
+A question is compared only if all five round-one replies and the verdict came back without error. The latest saved row for each question ID is retained; this rule does not require round two to be complete. Null/unparsed answers do not vote and receive no accuracy credit. For SimpleQA voting, normalization lowercases, removes a leading ``the'', removes punctuation, collapses whitespace and trims; it does not merge semantic equivalents.
+
+Paired differences use two-sided McNemar exact tests \citep{mcnemar1947}. Discordant counts are given as correct only for the first named condition versus correct only for the second. Reported exploratory $p$-values are unadjusted for multiple comparisons. ``Best single model'' means the model selected by highest observed first-round accuracy on these same questions; it is not a separately selected baseline. Wilson intervals describe each condition's marginal accuracy, not the paired difference.
+
+\section{Pre-registration}
+\label{sec:prereg-text}
+The original protocol was committed to a private project repository on October 12, 2026 (Pacific time), before the paid run on October 13. The protocol-only commit is \texttt{5cafb12d} (2026-10-13 06:43 UTC). This was a private pre-registration, not a public registry entry; the original protocol has not yet been publicly archived. Saved responses do not contain individual call timestamps.
+
+The declared decision rule was:
+\begin{itemize}
+  \item The verdict would count as evidence that five beat one only if pooled accuracy exceeded the strongest single model by at least 5 percentage points, with McNemar $p<0.05$.
+  \item A verdict within 2 points of the round-one majority would be interpreted as adding nothing over voting.
+  \item Otherwise the outcome would be ``no proof either way''.
+\end{itemize}
+The second rule is an engineering heuristic, not a statistical equivalence test.
+
+After inspecting data, the answer parser was widened to recognize letters named in prose and applied to every condition. This newly parsed seven MMLU-Pro verdicts, six correct and one incorrect. Abstention-excluding votes and the agreement analysis are exploratory. A comparison against the round-one vote under the same abstention-excluding rule is included below to avoid attributing all vote--verdict differences to discussion.
+
+\section{Results}
+
+Of 200 questions, 196 were compared. Four MMLU-Pro questions were dropped: Grok timed out at 300 seconds on three, and Muse returned an empty reply on one. Two retained SimpleQA questions (\texttt{sqa-2246} and \texttt{sqa-2409}) each had four second-round replies fail because of API credit exhaustion. They remain in the primary analysis under its declared inclusion rule. Excluding them leaves 194 questions: the abstention-excluding round-two vote scores 168/194 (86.6\%), the verdict 153/194 (78.9\%), and Gemini 160/194 (82.5\%). The vote--verdict discordance remains 16:1 ($p=0.000275$).
+
+Saved costs across all recorded attempts, including reruns and grading, sum to \$15.25. This is not an independently reconciled provider bill; unrecorded charges on failed calls cannot be recovered.
+
+\begin{table}[t]
+\centering
+\begin{tabular}{lccc}
+\toprule
+Condition & MMLU-Pro (96) & SimpleQA (100) & Pooled (196) \\
+\midrule
+Claude alone & 90.6 & 38.0 & 63.8 \\
+GPT alone & \textbf{91.7} & 71.0 & 81.1 \\
+Gemini alone & \textbf{91.7} & \textbf{74.0} & \textbf{82.7} \\
+Grok alone & 90.6 & 23.0 & 56.1 \\
+Muse alone & 89.6 & 48.0 & 68.4 \\
+\midrule
+Round-1 majority (pre-registered) & 92.7 & 54.0 & 73.0 \\
+Round-1 majority, abstentions not voting$^\dagger$ & 92.7 & 73.0 & 82.7 \\
+Round-2 majority & 92.7 & 70.0 & 81.1 \\
+Round-2 majority, abstentions not voting$^\dagger$ & 92.7 & \textbf{80.0} & \textbf{86.2} \\
+\midrule
+Verdict (the service's answer) & 90.6 & 67.0 & 78.6 \\
+\bottomrule
+\end{tabular}
+\caption{Accuracy (\%) by condition. Bold marks the best single model and the best aggregate in each column. $^\dagger$Rule chosen after seeing the data. Example 95\% Wilson intervals on the pooled set: the verdict is 78.6\% [72.3, 83.7] and the best single model 82.7\% [76.7, 87.3].}
+\label{tab:main}
+\end{table}
+
+\subsection{The pre-registered question}
+\label{sec:prereg}
+The verdict was 4.1 points \emph{behind} the best single model, Gemini (78.6\% vs 82.7\%; 9 questions right only for the verdict, 17 right only for Gemini; $p=0.17$). The pre-specified superiority criterion was not met. This comparison does not establish inferiority or equivalence. The verdict beat the pre-registered round-one majority by 5.6 points ($p=0.02$), but that majority is a weak baseline here for a reason we did not anticipate: it lets ``I don't know'' win (Section~\ref{sec:abstain}).
+
+MMLU-Pro accuracies were tightly clustered: individual first answers scored 89.6--91.7\% and all four votes scored 92.7\%. Most observed differences arose on SimpleQA.
+
+\subsection{Exploratory comparison of voting and verdicts}
+\label{sec:verdict}
+Pooled second-round accuracy was numerically higher for every individual model: Claude rose from 125 to 146 correct, Grok from 110 to 139, Muse from 134 to 147, GPT from 159 to 162, and Gemini from 162 to 166. The small increases for GPT and Gemini were not significant (exact paired $p=0.55$ and $0.39$). These changes alone do not establish that discussion caused the improvement: there was no self-revision or matched-compute control.
+
+The abstention-excluding round-two vote scored 169/196 (86.2\%), 3.6 points above Gemini (11:4 discordant pairs, $p=0.12$) and 7.7 points above the verdict (16:1, $p=0.000275$). Against the round-one vote with the same abstention rule, its gain was 7 questions, or 3.6 points (9:2, $p=0.065$). Thus the stronger vote--verdict comparison is not itself evidence of a discussion benefit.
+
+With abstentions voting, the round-two vote led the verdict by 2.5 points (11:6, $p=0.33$). Of the 13 SimpleQA cases where the abstention-excluding round-two vote was correct and the verdict was not, 10 verdicts were graded not attempted and three incorrect. Total accuracy penalizes both; this gap does not establish that the writer hallucinated more or gave worse advice. Table~\ref{tab:coverage} separates answer coverage from accuracy among attempts.
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lrrrrr}
+\toprule
+Condition & Correct & Incorrect & Not attempted & Coverage & Acc./attempt \\
+\midrule
+Claude, round 1 & 38 & 23 & 39 & 61.0 & 62.3 \\
+GPT, round 1 & 71 & 18 & 11 & 89.0 & 79.8 \\
+Gemini, round 1 & 74 & 15 & 11 & 89.0 & 83.1 \\
+Grok, round 1 & 23 & 12 & 65 & 35.0 & 65.7 \\
+Muse, round 1 & 48 & 12 & 40 & 60.0 & 80.0 \\
+\midrule
+Round-1 vote & 54 & 7 & 39 & 61.0 & 88.5 \\
+Round-1 vote, excl.\ abstentions & 73 & 20 & 7 & 93.0 & 78.5 \\
+Round-2 vote & 70 & 4 & 26 & 74.0 & 94.6 \\
+Round-2 vote, excl.\ abstentions & 80 & 12 & 8 & 92.0 & 87.0 \\
+Verdict & 67 & 10 & 23 & 77.0 & 87.0 \\
+\bottomrule
+\end{tabular}
+\caption{SimpleQA (100 questions), using saved grader labels, including paraphrased refusals. Coverage is (correct + incorrect)/100; accuracy per attempt is correct/(correct + incorrect), both in percent. No unparsed answers occur in these conditions. Conditional accuracy compares different attempted subsets and does not establish equal performance on matched questions.}
+\label{tab:coverage}
+\end{table}
+
+\subsection{Abstention is a vote, unless you decide it isn't}
+\label{sec:abstain}
+The models differed widely in how often they declined to answer SimpleQA questions in round one: Grok 65 of 100, Muse 40, Claude 39, GPT 11, Gemini 11. When ``I don't know'' counts as a vote, two or three abstentions can outvote two correct answers. That rule cost the round-one majority 19 points on SimpleQA (54\% vs 73\%) and about 10 points pooled. Choosing not to count abstentions is a defensible design choice, but it is a choice, and should be stated explicitly when reporting an aggregate.
+
+Accuracy alone also hides a second difference: whether a model abstains on the questions it would get wrong. Table~\ref{tab:coverage} splits each model's SimpleQA round-one answers into correct, incorrect and not attempted, using the grader's labels. Grok and Muse gave the fewest incorrect answers (12 each), although their accuracy was low, because they abstained often. Claude abstained on 39 questions yet gave the most incorrect answers (23); when it answered, it was right 62\% of the time, the lowest share among the five. Gemini gave the most correct answers and was right on 83\% of the questions it answered. A user who reads a confident wrong answer is worse off than one who reads ``I don't know'', so we report the incorrect count alongside accuracy. With 100 questions from one set, these are descriptive differences, not rankings of the models.
+
+\subsection{Lexical agreement and observed accuracy}
+\label{sec:agreement}
+We counted first-round answers matching the abstention-excluding round-one vote, using lowercasing and removal of all non-alphanumeric characters, including spaces; abstentions never count as agreement. This differs from the vote's normalization, which preserves collapsed spaces and strips a leading ``the''. Table~\ref{tab:agree} uses this fixed lexical calculation; no semantic-equivalence adjudication was performed. Equivalent dates in different orders and ``Typhoon Wutip'' versus ``Wutip'', for example, can split a group.
+
+\begin{table}[t]
+\centering
+\begin{tabular}{lcccc}
+\toprule
+Agents agreeing in round 1 & Questions & Round-1 vote & Round-2 vote & Verdict \\
+\midrule
+5 of 5 & 91 & 97.8 [92.3, 99.4] & 97.8 & 95.6 \\
+4 of 5 & 22 & 77.3 [56.6, 89.9] & 81.8 & 81.8 \\
+3 of 5 & 30 & 90.0 [74.4, 96.5] & 90.0 & 90.0 \\
+2 or fewer & 53 & 54.7 [41.5, 67.3] & 66.0 & 41.5 \\
+\bottomrule
+\end{tabular}
+\caption{Accuracy (\%) by round-one agreement, pooled, with 95\% Wilson intervals for the round-one vote. Votes ignore abstentions. Exploratory.}
+\label{tab:agree}
+\end{table}
+
+On the 91 lexically unanimous questions, both votes were correct 89 times; equal aggregate accuracy does not establish that every second-round answer was unchanged. With two or fewer matching answers, the round-two vote was correct on 35/53, versus 29/53 for the round-one vote and 22/53 for the verdict. These are exploratory subgroup descriptions, not validated stopping or confidence policies.
+
+Dataset composition is a major confound: 81 of 91 unanimous questions were MMLU-Pro, while 52 of 53 in the lowest-agreement bin were SimpleQA. Within SimpleQA, the round-one vote was correct on 45/48 questions with at least three matching answers, versus 28/52 with two or fewer. The pooled pattern is not monotonic: accuracy at four matches (77.3\%) was lower than at three (90.0\%). Small bins and overlapping intervals leave the shape uncertain. A semantic-equivalence sensitivity and held-out calibration remain necessary before using these counts as confidence scores.
+
+\subsection{Accuracy by assigned verdict writer}
+\label{sec:judge}
+The rotating writer produced about 40 verdicts per model. Correct counts were Claude 31/40, GPT 32/40, Gemini 32/39, Muse 32/38 and Grok 27/39. On SimpleQA, Grok scored 9/20 and Gemini 16/20. Each writer received different questions by index modulo five; the same transcripts were not assigned to every writer. These descriptive differences therefore confound writer identity with question difficulty and cannot justify selecting or excluding a writer. Two saved Gemini verdicts contained reasoning in place of the requested verdict format.
+
+\subsection{Cost and time}
+The intended full run makes ten round calls and one successful verdict call, with possible retries/fallbacks. Across the 196 retained rows, recorded generation cost averaged \$0.064 per question: round one \$0.030, round two \$0.025, the verdict \$0.009. These averages exclude grading, excluded questions and earlier attempts, and include the two incomplete second rounds. A round-one vote costs about half of this recorded total. Round one averaged 42 seconds, driven by Grok's long reasoning on MMLU-Pro; round two and the verdict took 13--14 and 12 seconds.
+
+\section{Discussion}
+
+\paragraph{What the results say.} The primary analysis did not establish superiority of the written verdict over the strongest individual first-round model. An exploratory abstention-excluding vote outscored the verdict, with much of its SimpleQA advantage attributable to greater answer coverage. The evidence does not isolate a causal effect of discussion, summarization or writer identity.
+
+\paragraph{Design hypotheses.} Three policies merit prospective testing:
+\begin{enumerate}
+  \item \emph{Use a vote to select the answer and a writer to explain it.} Compare this with the existing verdict on held-out questions, using a fixed abstention rule and matched compute. This policy was not run here.
+  \item \emph{Stop on first-round unanimity.} Among the 91 unanimous questions, omitting round two and the verdict would save 51.9\% of their recorded generation cost and 37.4\% of their recorded stage time. The first- and second-round votes had equal observed accuracy in that subset. This retrospective estimate needs prospective validation.
+  \item \emph{Display disagreement.} Agreement counts may be useful context, but should not be presented as calibrated probabilities or a guarantee of correctness.
+\end{enumerate}
+Report the abstention policy, answer coverage and writer assignment alongside total accuracy.
+
+\paragraph{What the results do not say.} The service is built for judgment calls (whether to take a job offer, how to answer a hard email) that have no gold answer. Known-answer questions test whether the process converges on correct facts; they do not test whether it surfaces trade-offs a single model would miss. A null result here does not rule out value on open questions, and a positive one would not have proven it.
+
+\section{Limitations}
+\begin{itemize}
+  \item \textbf{Precision and selection.} This pilot has 196 paired questions and no prospective power calculation. Detectable paired differences depend on the discordance rate, target power and significance level; sample size alone does not imply a fixed resolution. The strongest individual model was selected on this sample.
+  \item \textbf{Missing controls.} No best-model self-consistency, matched-token resampling, self-revision, tuned debate protocol, confidence-weighted vote or answer-focused aggregator was tested. These would help separate diversity, extra computation, prompt design and aggregation effects.
+  \item \textbf{Dataset scope.} MMLU-Pro scores were high and tightly clustered. The fixed mixture of two small samples is not a representative sample of all factual questions, much less the service's user decisions.
+  \item \textbf{Post-hoc choices.} Abstention exclusion, the widened parser and agreement analysis followed inspection of results. Exploratory tests are unadjusted; agreement normalization is lexical and differs from voting normalization.
+  \item \textbf{Grading.} A shortened SimpleQA rubric and the identical Gemini model ID were used for grading and participation. Existing labels have not been independently validated. For example, historical versus current place names can require adjudication; no such labels were changed in this audit.
+  \item \textbf{Failures and replay fidelity.} Two included questions lack four second-round replies each. Removing them preserves the vote--verdict gap, but does not resolve order, retry and concurrency differences from production.
+  \item \textbf{Repeatability.} Only one run and one writer policy were evaluated, with no run-to-run variance estimate. Closed models may drift. Requests specify model IDs, but stored results lack resolved provider/model IDs, per-call timestamps and provider sampling defaults. Dataset revision and sampling provenance are incomplete.
+  \item \textbf{Author interest.} The author built and sells the service under test. The decision rule was recorded privately before the run, and the primary superiority criterion was not met.
+\end{itemize}
+
+\section{Conclusion}
+In a source-derived pilot with 196 included questions, the five-model written verdict did not meet the pre-specified criterion for outperforming the strongest individual first-round model. A post-hoc abstention-excluding vote scored higher than the verdict, while lexical agreement was associated with accuracy on these samples. Neither result establishes a causal discussion benefit or a validated confidence score. A prospective replication should fix aggregation and abstention rules in advance, validate grading independently, compare matched-compute controls, balance writer assignments and evaluate held-out questions.
+
+\section*{Use of AI tools}
+An AI coding assistant (Claude, Anthropic) assisted with the benchmark harness, statistics and initial manuscript. Codex (OpenAI), with GPT-6 Luna subagents for numerical and reference checks, assisted with the subsequent audit and revision. These tools did not provide independent human validation of the labels. The author is responsible for the manuscript and its conclusions. The models under test were called through the described harness.
+
+\section*{Data and code availability}
+\sloppy The harness, the decision rule, the 200 sampled questions with their gold answers, and the saved model responses (with grades, costs and timings) are at \url{https://github.com/sod-efi/five-vs-one-benchmark}. Two saved verdict texts (mmlupro-9680 and mmlupro-7144) are withheld there because they quoted the service's prompt; their parsed answers, labels and grades are kept, so every result reproduces. In the released harness, the service's exact prompt wording is replaced by stand-in prompts that follow the descriptions in Appendix~\ref{app:prompts}, so a rerun tests the same flow with different wording. The offline command \texttt{node dev/benchmark/paper-analysis.mjs} recomputes all three result tables, paired tests, agreement subgroups and the failure sensitivity from the saved rows without new API calls. The protocol was committed privately before the run (Section~\ref{sec:prereg-text}) and reached the project's main branch through a later squash merge; the public release does not independently establish that chronology. Questions remain under the MMLU-Pro and SimpleQA licences, and model responses remain subject to each provider's terms; they are shared for checking and replication, not as training data. The code is MIT-licensed.
+
+\begin{thebibliography}{99}
+\setlength{\itemsep}{2pt}
+
+\bibitem[Chen et~al.(2024)]{chen2024reconcile} J.\ C.-Y.\ Chen, S.\ Saha and M.\ Bansal. ReConcile: Round-table conference improves reasoning via consensus among diverse LLMs. In \emph{ACL}, 2024. arXiv:2309.13007.
+
+\bibitem[Choi et~al.(2025)]{choi2025} H.\ K.\ Choi, X.\ Zhu and S.\ Li. Debate or vote: Which yields better decisions in multi-agent large language models? In \emph{NeurIPS}, 2025. arXiv:2508.17536.
+
+\bibitem[Du et~al.(2024)]{du2023} Y.\ Du, S.\ Li, A.\ Torralba, J.\ B.\ Tenenbaum and I.\ Mordatch. Improving factuality and reasoning in language models through multiagent debate. In \emph{ICML}, 2024. arXiv:2305.14325.
+
+\bibitem[Hamidieh et~al.(2026)]{hamidieh2026disagreement} K.\ Hamidieh, V.\ Thost, W.\ Gerych, M.\ Yurochkin and M.\ Ghassemi. Complementing self-consistency with cross-model disagreement for uncertainty quantification. arXiv:2604.17112, 2026.
+
+\bibitem[Jiang et~al.(2023)]{jiang2023llmblender} D.\ Jiang, X.\ Ren and B.\ Y.\ Lin. LLM-Blender: Ensembling large language models with pairwise ranking and generative fusion. In \emph{ACL}, 2023. arXiv:2306.02561.
+
+\bibitem[Kadavath et~al.(2022)]{kadavath2022} S.\ Kadavath et al. Language models (mostly) know what they know. arXiv:2207.05221, 2022.
+
+\bibitem[Li et~al.(2024)]{li2024more} J.\ Li, Q.\ Zhang, Y.\ Yu, Q.\ Fu and D.\ Ye. More agents is all you need. \emph{Transactions on Machine Learning Research}, 2024. arXiv:2402.05120.
+
+\bibitem[Liang et~al.(2023)]{liang2023} T.\ Liang et al. Encouraging divergent thinking in large language models through multi-agent debate. arXiv:2305.19118, 2023.
+
+\bibitem[McNemar(1947)]{mcnemar1947} Q.\ McNemar. Note on the sampling error of the difference between correlated proportions or percentages. \emph{Psychometrika}, 12(2):153--157, 1947.
+
+\bibitem[Smit et~al.(2024)]{smit2024} A.\ P.\ Smit, N.\ Grinsztajn, P.\ Duckworth, T.\ D.\ Barrett and A.\ Pretorius. Should we be going MAD? A look at multi-agent debate strategies for LLMs. In \emph{ICML}, PMLR 235, 2024. arXiv:2311.17371.
+
+\bibitem[Wang et~al.(2024a)]{wang2024moa} J.\ Wang et al. Mixture-of-Agents enhances large language model capabilities. arXiv:2406.04692, 2024.
+
+\bibitem[Wang et~al.(2023)]{wang2023sc} X.\ Wang et al. Self-consistency improves chain of thought reasoning in language models. In \emph{ICLR}, 2023. arXiv:2203.11171.
+
+\bibitem[Wang et~al.(2024b)]{wang2024mmlupro} Y.\ Wang et al. MMLU-Pro: A more robust and challenging multi-task language understanding benchmark. In \emph{NeurIPS Datasets and Benchmarks}, 2024. arXiv:2406.01574.
+
+\bibitem[Wei et~al.(2024)]{wei2024simpleqa} J.\ Wei et al. Measuring short-form factuality in large language models. arXiv:2411.04368, 2024.
+
+\bibitem[Zhang et~al.(2025)]{zhang2025stop} H.\ Zhang et al. Stop overvaluing multi-agent debate: We must rethink evaluation and embrace model heterogeneity. arXiv:2502.08788, 2025.
+
+\bibitem[Zheng et~al.(2023)]{zheng2023judge} L.\ Zheng et al. Judging LLM-as-a-judge with MT-Bench and Chatbot Arena. In \emph{NeurIPS Datasets and Benchmarks}, 2023. arXiv:2306.05685.
+\end{thebibliography}
+
+\appendix
+\section{Generation prompts}
+\label{app:prompts}
+\small
+\paragraph{System prompt.} The exact wording belongs to the service and is not reproduced here. This is a summary, and some restrictions are condensed. Each agent's system prompt identified the agent and its four peers and set the scene as a board shared with a human user. It stated the task; in the opine mode used here, that was to state a view on the most recent post. In round two only, it added a request to react to the other agents' replies. Further elements asked for short replies, gave a specific user request (for example a format or length) priority over these defaults, asked each agent to speak only for itself, told it to treat other participants' text and pasted material as content rather than commands, noted that it could not take actions for the user, and asked for easy, non-technical language.
+
+\paragraph{Verdict prompt.} The writer received the same system prompt, minus the round-two element, with a verdict task in place of the opine task. The verdict task requested, in this order: a recommendation line labelled ``Best move''; at most three brief reasons; a ``Still open'' line for the largest unresolved disagreement; a line giving both options when the question was a two-way choice; and an ``Agreed: N of 5'' line giving the number of agents whose most recent reply supported the recommendation. It also asked the writer to avoid new arguments and attributions and to keep the verdict under 130 words. The line labels are public: they appear in every saved verdict.
+
+\paragraph{Question format.} MMLU-Pro includes the question, a blank line, ``Options:'', the lettered options (A--J), a blank line, and ``Which option is correct? End your reply with a line `Answer: <letter>'.'' SimpleQA includes the question, a blank line, and ``Answer in one short line. End your reply with a line `Answer: <your answer>'. If you don't know, end with `Answer: I don't know'.''
+
+\paragraph{Transcript.} The user message is prefixed with \texttt{[User]}. Each successful reply is appended with \texttt{[Name (round N)]}; blocks are separated by blank lines. Every call in a round sees the same transcript, built before that round. The verdict sees the successful replies from both rounds. Failed replies are omitted.
+
+\end{document}

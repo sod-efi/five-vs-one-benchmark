@@ -1,0 +1,602 @@
+[
+ {
+  "id": "sqa-0",
+  "topic": "Science and technology",
+  "question": "Who received the IEEE Frank Rosenblatt Award in 2010?",
+  "answer": "Michio Sugeno"
+ },
+ {
+  "id": "sqa-18",
+  "topic": "Sports",
+  "question": "What is the British-American kickboxer Andrew Tate's kickboxing name?",
+  "answer": "King cobra"
+ },
+ {
+  "id": "sqa-38",
+  "topic": "Sports",
+  "question": "What are the first names and surnames of the figure skaters who came 21st in the ice dance category at the 2022 Winter Olympics in Beijing?",
+  "answer": "Katharina Müller and Tim Dieck"
+ },
+ {
+  "id": "sqa-47",
+  "topic": "Other",
+  "question": "In 2022, which university did Honda Battle of the Bands (HBOB) select to be the first-ever HBCU campus to host the in-person event?",
+  "answer": "Alabama State University"
+ },
+ {
+  "id": "sqa-77",
+  "topic": "Science and technology",
+  "question": "At which university was the mechanical engineer Gang Chen an assistant professor from 1993 to 1997?",
+  "answer": "Duke University"
+ },
+ {
+  "id": "sqa-109",
+  "topic": "History",
+  "question": "Who laid the foundation stone of Jamia Millia Islamia?",
+  "answer": "Mahmud Hasan Deobandi."
+ },
+ {
+  "id": "sqa-219",
+  "topic": "History",
+  "question": "What day, month, and year did Emperor Xizong of Jin become the emperor of the Jin dynasty?",
+  "answer": "10 February, 1135"
+ },
+ {
+  "id": "sqa-246",
+  "topic": "Art",
+  "question": "Who sketched the \"Taddei Tondo\" following its arrival at the Royal Academy and published a letter in the Athenaeum of 3 July 1830 praising how it was lit?",
+  "answer": "John Constable"
+ },
+ {
+  "id": "sqa-261",
+  "topic": "Sports",
+  "question": "Who won the gold medal in men's foil at the first European Fencing Championships?",
+  "answer": "Andrea Borella"
+ },
+ {
+  "id": "sqa-302",
+  "topic": "Music",
+  "question": "In what district was the English songwriter Robert Patrick Weston born?",
+  "answer": "Islington"
+ },
+ {
+  "id": "sqa-306",
+  "topic": "Geography",
+  "question": "What is the topographic isolation of Pentagon Mountain in Montana in kilometers?",
+  "answer": "17.48 km"
+ },
+ {
+  "id": "sqa-348",
+  "topic": "Science and technology",
+  "question": "In which month and year did Apollo 14 pilot Edgar Mitchell and Apollo 17 geologist Harrison Schmitt, among other noted Mars exploration advocates, publish an anthology of Mars-to-Stay architectures titled \"A One Way Mission to Mars: Colonizing the Red Planet\"?",
+  "answer": "March 2011"
+ },
+ {
+  "id": "sqa-365",
+  "topic": "Other",
+  "question": "In which month and year did \"Flying\" magazine publish \"Battling the Big Lie: John King's Crusade to Change Aviation's Culture\"?",
+  "answer": "March 2001"
+ },
+ {
+  "id": "sqa-406",
+  "topic": "Other",
+  "question": "How many people were injured in the Srinagar bombing on March 6, 2022?",
+  "answer": "24"
+ },
+ {
+  "id": "sqa-492",
+  "topic": "Music",
+  "question": "In which year, month, and day was the singer Beele born?",
+  "answer": "2002 September 30"
+ },
+ {
+  "id": "sqa-520",
+  "topic": "TV shows",
+  "question": "In the British drama series \"Happy Valley,\" who does Alec Secareanu play?",
+  "answer": "Darius Knezevic."
+ },
+ {
+  "id": "sqa-582",
+  "topic": "Sports",
+  "question": "On what year was the JK Tyre Rotax Max Karting Championship launched in India?",
+  "answer": "2005"
+ },
+ {
+  "id": "sqa-595",
+  "topic": "TV shows",
+  "question": "What were the day, month, and year when Hum TV shut down its SD feed and shifted to HD in Pakistan?",
+  "answer": "May 1, 2018"
+ },
+ {
+  "id": "sqa-606",
+  "topic": "TV shows",
+  "question": "Who was the guest star who played Carter on S5 E9 of \"The Dukes of Hazzard\"?",
+  "answer": "Brett Halsey"
+ },
+ {
+  "id": "sqa-637",
+  "topic": "Politics",
+  "question": "On March 22, 2011, who was the Pakistani leader of Jama'at-ud-Da'wah who issued a $2.2 million fatwā for anyone who killed Pastor Terry Jones?",
+  "answer": "Amir Hamza"
+ },
+ {
+  "id": "sqa-644",
+  "topic": "Other",
+  "question": "In what year did Carlotta Gall start her career?",
+  "answer": "1994"
+ },
+ {
+  "id": "sqa-678",
+  "topic": "Art",
+  "question": "During what year did Tatsuo Miyajima have his first solo exhibition?",
+  "answer": "1983"
+ },
+ {
+  "id": "sqa-685",
+  "topic": "Art",
+  "question": "In which Swiss municipality was the painter Jean Preudhomme baptized in 1732?",
+  "answer": "Rolle"
+ },
+ {
+  "id": "sqa-698",
+  "topic": "Other",
+  "question": "What is the name of the type of cancer that Fatima Sydow, a renowned Cape Malay culinary artist, was battling before she passed away?",
+  "answer": "Soft tissue sarcoma."
+ },
+ {
+  "id": "sqa-729",
+  "topic": "Art",
+  "question": "What year did Kathryn Shaw step down as the Artistic Director of Studio 58?",
+  "answer": "2020"
+ },
+ {
+  "id": "sqa-835",
+  "topic": "Music",
+  "question": "Which famous video game character is featured in the music video for Die Ärzte's song \"Men Are Pigs\"?",
+  "answer": "Lara Croft"
+ },
+ {
+  "id": "sqa-838",
+  "topic": "Science and technology",
+  "question": "Who was awarded the 2020 Euler Medal by the Institute of Combinatorics and Its Applications?",
+  "answer": "Marston Conder"
+ },
+ {
+  "id": "sqa-863",
+  "topic": "Music",
+  "question": "Who adopted Jett Williams in 1954?",
+  "answer": "Lillie Williams Stone"
+ },
+ {
+  "id": "sqa-883",
+  "topic": "Sports",
+  "question": "What was the year when Cléo Hamon began learning to skate?",
+  "answer": "2006"
+ },
+ {
+  "id": "sqa-998",
+  "topic": "History",
+  "question": "How many minutes did the Fairey Albacore with Taurus XII used in World War II take to reach 6000 feet altitude in its time to altitude specification?",
+  "answer": "8"
+ },
+ {
+  "id": "sqa-1143",
+  "topic": "Politics",
+  "question": "What were the month, day, and year when the construction of the UN headquarters in New York City was completed?",
+  "answer": "October 9, 1952"
+ },
+ {
+  "id": "sqa-1228",
+  "topic": "History",
+  "question": "In what year did Edward Baker Jelks earn a Ph.D. in archaeology?",
+  "answer": "1965"
+ },
+ {
+  "id": "sqa-1230",
+  "topic": "Science and technology",
+  "question": "What is the last name of the individual who won the Marlow Medal and Prize, an early-career award in physical chemistry given by the Royal Society of Chemistry, in 2022?",
+  "answer": "Curchod"
+ },
+ {
+  "id": "sqa-1442",
+  "topic": "Geography",
+  "question": "What's the first typhoon of the 2019 Pacific typhoon season called?",
+  "answer": "Wutip"
+ },
+ {
+  "id": "sqa-1475",
+  "topic": "Video games",
+  "question": "In Supergiant's 2014 game Transistor, you can view an invitation on an OVC terminal in Goldwalk Promenade to Cloudbank's 67th Annual Fashion Week posted on 06-25-67 at 15:48 by which character?",
+  "answer": "Sybil Reisz"
+ },
+ {
+  "id": "sqa-1538",
+  "topic": "Geography",
+  "question": "How many total steps go to the top of the lighthouse in Genoa, Italy?",
+  "answer": "365"
+ },
+ {
+  "id": "sqa-1577",
+  "topic": "Science and technology",
+  "question": "In what year was American chemist Eger Vaughan Murphree awarded the Industrial Research Institute Medal?",
+  "answer": "1953"
+ },
+ {
+  "id": "sqa-1643",
+  "topic": "TV shows",
+  "question": "In which season and episode of Breaking Bad does Gus confront a sniper?",
+  "answer": "Season 4 Episode 9 Bug"
+ },
+ {
+  "id": "sqa-1644",
+  "topic": "Geography",
+  "question": "What year was the municipality of Hispania, Antioquia, Colombia, founded?",
+  "answer": "1925"
+ },
+ {
+  "id": "sqa-1675",
+  "topic": "TV shows",
+  "question": "Who kills Daryl Garrs in Happy Valley?",
+  "answer": "Alison Garrs"
+ },
+ {
+  "id": "sqa-1754",
+  "topic": "Politics",
+  "question": "What was the year when Vikram S. Buddhi was sentenced to prison?",
+  "answer": "2007"
+ },
+ {
+  "id": "sqa-1790",
+  "topic": "Art",
+  "question": "What Canadian did Louis-Philippe Hébert create a sculpture of that was first displayed at the Universal Exposition in Paris in 1900 and then erected on Parliament Hill in Ottawa in 1901?",
+  "answer": "Alexander Mackenzie"
+ },
+ {
+  "id": "sqa-1839",
+  "topic": "Art",
+  "question": "In which year was Monir Shahroudy Farmanfarmaian (an Iranian artist) awarded the Venice Biennale?",
+  "answer": "1958"
+ },
+ {
+  "id": "sqa-1868",
+  "topic": "Other",
+  "question": "Which city's police won the 2017 FICCI Smart Policing Award?",
+  "answer": "Pune city police"
+ },
+ {
+  "id": "sqa-2006",
+  "topic": "Music",
+  "question": "What is the birth name of the Mexican artist Peso Pluma?",
+  "answer": "Hassan Emilio Kabande Laija"
+ },
+ {
+  "id": "sqa-2068",
+  "topic": "Sports",
+  "question": "In what year was Isavel Roche-Kelly named UCT Sportsperson of the Year?",
+  "answer": "1980"
+ },
+ {
+  "id": "sqa-2080",
+  "topic": "Art",
+  "question": "During which year did Pipilotti Rist receive a Special Award from the Seville European Film Festival?",
+  "answer": "2009"
+ },
+ {
+  "id": "sqa-2142",
+  "topic": "Art",
+  "question": "After Madie Hall Xuma arrived in South Africa, what was the name of the musical she produced?",
+  "answer": "The Green Pastures"
+ },
+ {
+  "id": "sqa-2163",
+  "topic": "Science and technology",
+  "question": "In what year was the praying mantis species Eremiaphila cycloptera described by Uvarov?",
+  "answer": "1939"
+ },
+ {
+  "id": "sqa-2176",
+  "topic": "Politics",
+  "question": "What were the day, month, and year when President Bush and Congress agreed on the joint resolution authorizing the Iraq War?",
+  "answer": "October 2, 2002"
+ },
+ {
+  "id": "sqa-2210",
+  "topic": "Art",
+  "question": "What is the full title of Zanele Muholi's publication from 2011?",
+  "answer": "Zanele Muholi: African Women Photographers #1"
+ },
+ {
+  "id": "sqa-2246",
+  "topic": "Science and technology",
+  "question": "In what month and year did Starlink become the largest-ever satellite constellation?",
+  "answer": "January 2020"
+ },
+ {
+  "id": "sqa-2347",
+  "topic": "Science and technology",
+  "question": "In what year was Leonora Neuffer Bilger awarded the Francis P. Garvan–John M. Olin Medal?",
+  "answer": "1953"
+ },
+ {
+  "id": "sqa-2409",
+  "topic": "Art",
+  "question": "In which U.S. state was painter Davyd Whaley born?",
+  "answer": "Tennessee"
+ },
+ {
+  "id": "sqa-2431",
+  "topic": "Music",
+  "question": "How many inductees did the American Classical Music Hall of Fame have in 2000?",
+  "answer": "Ten."
+ },
+ {
+  "id": "sqa-2459",
+  "topic": "History",
+  "question": "What famous field marshal said, \"I have no intention of shooting myself for this Bohemian corporal\"?",
+  "answer": "Friedrich Paulus"
+ },
+ {
+  "id": "sqa-2579",
+  "topic": "Video games",
+  "question": "What was the last thing Father Martin said before he was burned alive in the 2013 video game \"Outlast\"?",
+  "answer": "Now, my son"
+ },
+ {
+  "id": "sqa-2628",
+  "topic": "Politics",
+  "question": "Who launched the logo for the GI (Geographical Indication) Tag?",
+  "answer": "Minister Suresh Prabhu"
+ },
+ {
+  "id": "sqa-2645",
+  "topic": "Geography",
+  "question": "How many summer pasture sites, with 5% sampling intensity, were selected from the study area for the article \"The local medicinal plant knowledge in Kashmir Western Himalaya: A way to foster ecological transition via community-centered health-seeking strategies\"?",
+  "answer": "Eighteen summer pasture sights."
+ },
+ {
+  "id": "sqa-2839",
+  "topic": "Science and technology",
+  "question": "In February 2005, the name of the \"Japanese Association of Mathematical Sciences\" (JAMS) was changed to what?",
+  "answer": "International Society for Mathematical Sciences"
+ },
+ {
+  "id": "sqa-2845",
+  "topic": "Art",
+  "question": "Who was Raquel Meller's first husband?",
+  "answer": "Gómez Carrillo"
+ },
+ {
+  "id": "sqa-2858",
+  "topic": "Politics",
+  "question": "What was the cause of death for Tom Van Meter, a former member of the Ohio General Assembly?",
+  "answer": "Cancer"
+ },
+ {
+  "id": "sqa-2864",
+  "topic": "Art",
+  "question": "What is the other name for the \"Sangeet Natak Akademi Award\"?",
+  "answer": "Akademi Puraskar"
+ },
+ {
+  "id": "sqa-2946",
+  "topic": "Science and technology",
+  "question": "In which year was computer scientist Elizabeth Michelle Belding named a Fellow of the Institute of Electrical and Electronics Engineers?",
+  "answer": "2014"
+ },
+ {
+  "id": "sqa-3005",
+  "topic": "Music",
+  "question": "What is Donnie McClurkin's son's name?",
+  "answer": "Matthew McClurkin"
+ },
+ {
+  "id": "sqa-3021",
+  "topic": "Music",
+  "question": "What song's music video did Metal Injection rank at number 9 on the list of Top 15 Metal Viral Videos of the Year on December 8, 2011?",
+  "answer": "ド・キ・ド・キ☆モーニング[ Doki Doki☆Morning ] by BABYMETAL"
+ },
+ {
+  "id": "sqa-3154",
+  "topic": "Science and technology",
+  "question": "During which years did Richard H.G. Parry serve as Secretary-General of the International Society for Soil Mechanics and Geotechnical Engineering?",
+  "answer": "1981-1999"
+ },
+ {
+  "id": "sqa-3181",
+  "topic": "Sports",
+  "question": "How many players on the Winnipeg Falcons hockey team died in WWI?",
+  "answer": "2 "
+ },
+ {
+  "id": "sqa-3205",
+  "topic": "Art",
+  "question": "Richard Serra created his work 'Thirty-Five Feet of Lead Rolled Up' while living in which city?",
+  "answer": "New York City"
+ },
+ {
+  "id": "sqa-3256",
+  "topic": "Geography",
+  "question": "In which NYC borough was pharmacist David Morris Kern born?",
+  "answer": "Manhattan"
+ },
+ {
+  "id": "sqa-3283",
+  "topic": "Art",
+  "question": "What year did Tatsuo Miyajima's 'Kaki Tree Project' plant its first tree?",
+  "answer": "1996"
+ },
+ {
+  "id": "sqa-3303",
+  "topic": "Science and technology",
+  "question": "In which month and year was Windows 2000 Service Pack 3 released?",
+  "answer": "August 2002"
+ },
+ {
+  "id": "sqa-3318",
+  "topic": "Science and technology",
+  "question": "On what day and month of 1879 was Charles Sedgwick's patent application for the new and improved collapsible drinking cup granted?",
+  "answer": "June 3"
+ },
+ {
+  "id": "sqa-3354",
+  "topic": "Music",
+  "question": "What EP did Machine Girl release in 2016?",
+  "answer": "MACHINE GIRL VS MACHINE GIRL"
+ },
+ {
+  "id": "sqa-3391",
+  "topic": "Science and technology",
+  "question": "What is the PubChem CID of Rimegepant?",
+  "answer": "51049968"
+ },
+ {
+  "id": "sqa-3464",
+  "topic": "Music",
+  "question": "What day, month, and year was the album \"The Weight of These Wings\" by Miranda Lambert certified platinum in the U.S.?",
+  "answer": "July 10, 2017"
+ },
+ {
+  "id": "sqa-3525",
+  "topic": "Art",
+  "question": "In what year did the Harry Stone Gallery in New York City mount an exhibition of sixty-seven \"American Primitive\" paintings that featured twenty of Willson's surviving watercolors?",
+  "answer": "1944"
+ },
+ {
+  "id": "sqa-3534",
+  "topic": "Art",
+  "question": "Whose painting was purchased by Peter Arrell Browne Widener in 1911 for just over half a million USD?",
+  "answer": "Rembrandt"
+ },
+ {
+  "id": "sqa-3540",
+  "topic": "Science and technology",
+  "question": "What is the KEGG ID of barium sulfate?",
+  "answer": "D02052"
+ },
+ {
+  "id": "sqa-3547",
+  "topic": "Geography",
+  "question": "In what city and country did Gustav Kramer work as an assistant at the German-Italian Institute of Marine Biology?",
+  "answer": " Rovinj, Croatia"
+ },
+ {
+  "id": "sqa-3560",
+  "topic": "Science and technology",
+  "question": "In which year was the SSL SL 4000 G Series console introduced?",
+  "answer": "1987"
+ },
+ {
+  "id": "sqa-3564",
+  "topic": "Politics",
+  "question": "Which U.S. president was the last one to be born in the 18th century?",
+  "answer": "James Buchanan"
+ },
+ {
+  "id": "sqa-3566",
+  "topic": "Music",
+  "question": "What day, month, and year did the Jet Set Radio original soundtrack release in Japan?",
+  "answer": "December 20, 2000"
+ },
+ {
+  "id": "sqa-3581",
+  "topic": "Video games",
+  "question": "In the online game World of Warcraft, in patch 5.2.0, what change was made to the cooldown of the shaman ability Elemental Mastery?",
+  "answer": "Decreased to 90 seconds"
+ },
+ {
+  "id": "sqa-3585",
+  "topic": "History",
+  "question": "What was the first and last name of the first woman lawyer admitted in New York state?",
+  "answer": "Kate Stoneman"
+ },
+ {
+  "id": "sqa-3635",
+  "topic": "Politics",
+  "question": "What is the number of the executive order that created the Federal Theatre Project?",
+  "answer": "7034"
+ },
+ {
+  "id": "sqa-3711",
+  "topic": "Music",
+  "question": "What city did Ciara perform in during her Beauty Marks Tour on September 24, 2019?",
+  "answer": "Houston"
+ },
+ {
+  "id": "sqa-3714",
+  "topic": "Sports",
+  "question": "In how many first-class matches did Douglas Bennett, the South African cricketer, play from 1912 to 1924?",
+  "answer": "7"
+ },
+ {
+  "id": "sqa-3727",
+  "topic": "Art",
+  "question": "Who did the musical composition for the play Antigone as presented in the 2022 Athens Epidaurus Festival?",
+  "answer": "Dimitris Theocharis"
+ },
+ {
+  "id": "sqa-3839",
+  "topic": "Sports",
+  "question": "Who became the fastest person and first woman to pull a double crossing of the Auau Channel in Hawaii?",
+  "answer": "Meredith Novack"
+ },
+ {
+  "id": "sqa-3917",
+  "topic": "Other",
+  "question": "Who is the web and administrative assistant for the UNESCO Science Report: The Race Against Time for Smarter Development (2021)?",
+  "answer": "Ali Barbash"
+ },
+ {
+  "id": "sqa-3920",
+  "topic": "Other",
+  "question": "What year was the attraction Thunder Road added to Dollywood?",
+  "answer": "1996"
+ },
+ {
+  "id": "sqa-3973",
+  "topic": "History",
+  "question": "What was Sir Syed Ahmed Khan serving as (position title) when the Indian Rebellion of 1857 broke out?",
+  "answer": "chief assessment officer"
+ },
+ {
+  "id": "sqa-3981",
+  "topic": "Art",
+  "question": "Who did the set and costume design for the Antigone production at the Epidaurus Festival 2022?",
+  "answer": "Kenny McLellan"
+ },
+ {
+  "id": "sqa-3991",
+  "topic": "Science and technology",
+  "question": "What GPU does the Lumia 550 have?",
+  "answer": "Qualcomm Adreno 304."
+ },
+ {
+  "id": "sqa-4079",
+  "topic": "Politics",
+  "question": "What month and year was Corrado Gabriele, an Italian politician, born?",
+  "answer": "November 1966"
+ },
+ {
+  "id": "sqa-4132",
+  "topic": "Music",
+  "question": "What position did the album \"Expectations\" by Bebe Rexha place in the 2018 US Billboard 200 year-end chart?",
+  "answer": "147th"
+ },
+ {
+  "id": "sqa-4152",
+  "topic": "Science and technology",
+  "question": "What were the month and year when the Indonesian Food and Drug Authority (FDA) approved Qdenga for use in individuals six years to 45 years of age and became the first authority in the world to approve Qdenga?",
+  "answer": "August 2022"
+ },
+ {
+  "id": "sqa-4195",
+  "topic": "Politics",
+  "question": "What year was Kiyosi Ito appointed to the Cabinet Statistics Bureau?",
+  "answer": "1939"
+ },
+ {
+  "id": "sqa-4212",
+  "topic": "Science and technology",
+  "question": "What watch company made the world's first computerized diver's watch?",
+  "answer": "Seiko"
+ }
+]
