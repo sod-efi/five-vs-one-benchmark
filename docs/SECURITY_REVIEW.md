@@ -1,0 +1,13 @@
+# Security review
+
+## 2026-10-16: future dispatch
+
+Keys come only from the environment and are never learner inputs. Provider endpoint credentials/query/fragment and non-loopback HTTP are rejected. The wrapper permits only the configured exact completion endpoint. Tests override inherited provider settings with an explicit loopback fake and synthetic key.
+
+Before network access, new output must be fresh, explicit, non-symlink, outside source (or beneath ignored future-results). Explicit --resume accepts only a v2 marker matching archived SHA plus hashes of exact original arguments, provider endpoint and canonical state path. Every existing output child must be a regular non-symlink file. Marker and previous result bytes remain intact; resume summaries are unique. Completed questions are skipped by the unchanged checkpoint reader; unfinished questions may repeat their partial calls. The archived runner receives that exact --out argument; duplicate/equals forms are rejected. Learner state cannot point at tracked source or run results, and symlinks are checked again before persistence. Ordinary filesystem races from a hostile local process are outside this boundary. Use a trusted local account and separate state files per process.
+
+Persistent learner data is bounded origin/model hashes and numeric accepted settings only. Replies are read transiently to check nonempty success; no raw body, key, question or prompt is copied into learning state. The unchanged runner still writes full experiment replies/results into the explicit output directory and prints progress; use only approved inputs and protect those local artifacts. Ignored paths reduce accidental commits, not access control.
+
+Existing state must have the exact V2 ownership tag and strict bounded schema; corrupt/unrelated files stop startup before requests and remain untouched. Choose a new state path to recover. Storage failures during an active run fail open without extra requests. Failed trials roll back; reset by moving state aside. Existing archived files are never rewritten. No telemetry, automatic publication, model training or paid test calls were added. Fake tests are evidence of mechanism behavior, not measured live improvement.
+
+The V2 wrapper verifies SHA256 of the archived runner, its only local code dependency (`lib.ts`) and both question JSON files before importing the runner or accessing the network. CRLF is normalized to LF so platform checkout line endings do not change identity; all other bytes are bound to the pinned release. The manifest is included in the run marker and checked on resume.

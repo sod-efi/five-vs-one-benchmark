@@ -25,16 +25,34 @@ node dev/benchmark/paper-analysis.mjs
 
 It prints JSON with each table's counts, the exact McNemar tests, the Wilson intervals and the sensitivity checks.
 
-## Run it again
+## Future experiments (v2 dispatch)
 
-Needs [Bun](https://bun.sh) and an OpenRouter key with a spending limit. The first run cost about $15.
+Needs Bun and an OpenRouter key supplied through `OPENROUTER_API_KEY`. These calls cost money; set a provider spending limit first. The automatic dispatch loop is the default for new experiments:
 
 ```sh
-OPENROUTER_API_KEY=sk-or-... bun dev/benchmark/run.ts --set all --out my-results
-bun dev/benchmark/summarize.ts --out my-results
+bun experiments/v2/run.mjs --set all --out future-results/run-001
+bun dev/benchmark/summarize.ts --out future-results/run-001
 ```
 
-Closed models change over time, so a new run measures today's models, not the ones in the paper. The model IDs used are in `lib.ts` and in the paper.
+Use a fresh, explicit output directory each time. Existing directories require explicit `--resume`; published source/results paths and symlinks are always refused before any provider request. To continue an interrupted v2 run, repeat the exact original command with `--resume`. The marker must match the v2 protocol, archived SHA, arguments, provider and learning-state path; completed questions are skipped automatically. The archived runner's checkpoint files all go into the supplied directory. Existing result bytes and the original marker are preserved; each resume writes a separate aggregate summary. Only incomplete questions are retried, so partial calls within an unfinished question can repeat under the archived checkpoint semantics.
+
+V2 learns a bounded concurrency and inter-request delay for each hashed provider-origin/model pair. Successful queued calls form eight-call throughput windows; a small trial is retained only after a saturated window improves completed calls per second by more than 5%. Slower, unsuccessful or insufficient-demand trials roll back. Actual overload/errors lower concurrency and increase delay; provider `Retry-After` is respected. It adds no requests or retries: the frozen runner retains its own retry policy. Answer quality is not the optimization target.
+
+Last accepted settings persist automatically in ignored `experiments/v2/.runtime/learning.json` (at most 32 profiles). This file holds only scope hashes and bounded numeric settings. Prompts, questions, replies, credentials and raw model IDs never enter learner state. Experiment result files still contain the original runner's question/reply data: keep those private if using private inputs. `dispatch-summary.json` records aggregate trial outcomes; `experiment-protocol.json` marks the changed protocol. No live throughput benefit has been measured; tests use synthetic providers.
+
+Reset by moving the local learning file aside, or pass `--learning-state <separate-local-file>` for isolated experiments. Inside this repo, state is allowed only beneath `experiments/v2/.runtime/`; outside it, an explicit non-symlink path is allowed. Never share state between concurrent processes: it is a single-process cache. Missing state starts conservatively. Existing state must carry the exact V2 protocol tag and bounded schema; corrupt or unrelated files stop startup before network access and remain untouched. Preserve that file and choose a new state path to recover. Storage failures during an active run never replay a call. To disable adaptation for an archived reproduction, use the pinned original command below.
+
+**V2 timings are not comparable to the published study.** Scheduling has changed; prompts, questions, grading, archived results and paper have not. Closed models also change over time.
+
+## Archived research protocol
+
+The original command is frozen at commit `8974089727fc1714179f88cdd8f6cdec85ddfe1b`. In a separate checkout of that commit, with an explicit fresh output path outside that checkout:
+
+```sh
+bun dev/benchmark/run.ts --set all --out /absolute/path/to/fresh-archived-results
+```
+
+That archived protocol has fixed retries and no adaptive loop. Its published files remain byte-for-byte unchanged. The model IDs are in `dev/benchmark/lib.ts` and the paper.
 
 ## Things to know
 
@@ -52,3 +70,5 @@ Closed models change over time, so a new run measures today's models, not the on
 ## Citation
 
 Efi Ben Dor. *Are Five AI Agents Better Than One? Not Always. A Pilot of Multi-Model Deliberation with a Pre-Specified Test.* October 2026. https://github.com/sod-efi/five-vs-one-benchmark
+
+The V2 wrapper verifies SHA256 of the archived runner, its only local code dependency (`lib.ts`) and both question JSON files before importing the runner or accessing the network. CRLF is normalized to LF so platform checkout line endings do not change identity; all other bytes are bound to the pinned release. The manifest is included in the run marker and checked on resume.
